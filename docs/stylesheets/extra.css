@@ -2,11 +2,11 @@
     --md-primary-fg-color:        #D8DCE2;
     --md-primary-fg-color--light: #D8DCE2;
     --md-primary-fg-color--dark:  #4B4F63;
-  
-    --dark-color: #FFEC4B;
-    --light-color: #33E08E;
+
+    --dark-color: #990000;
+    --light-color: #990000;
   }
-  
+
 a:link {
 color: light-dark(var(--light-color), var(--dark-color));
 }

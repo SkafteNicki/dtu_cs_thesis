@@ -1,4 +1,4 @@
-site_name: P1 Documentation
+site_name: DTU Compute Thesis Guide
 docs_dir: docs
 site_dir: site
 repo_url: https://github.com/SkafteNicki/dtu_cs_thesis
@@ -6,8 +6,8 @@ repo_url: https://github.com/SkafteNicki/dtu_cs_thesis
 theme:
   language: en
   name: material
-  #favicon: figures/logo.png
-  #logo: figures/logo.png
+  favicon: figures/Corp_Red_RGB.png
+  logo: figures/Corp_Red_RGB.png
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -74,13 +74,13 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Before starting: before_starting.md
-  - Doing the thesis: 
-      - doing.md
-      - code.md
-  - Writing the thesis: writing.md
-  - The Defense: defense.md
-  - FAQ: faq.md
+  # - Before starting: before_starting.md
+  # - Doing the thesis:
+  #     - doing.md
+  #     - code.md
+  # - Writing the thesis: writing.md
+  # - The Defense: defense.md
+  # - FAQ: faq.md
 
 
   # - S1 - Development Environment 💻:
