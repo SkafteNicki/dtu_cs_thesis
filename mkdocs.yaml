@@ -27,6 +27,7 @@ theme:
   features:
     - navigation.instant
     - navigation.indexes
+    - navigation.expand
     - content.code.copy
     - content.code.annotate
     - navigation.footer
@@ -73,17 +74,11 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - Home: index.md
-  # - Before starting: before_starting.md
-  # - Doing the thesis:
-  #     - doing.md
-  #     - code.md
-  # - Writing the thesis: writing.md
-  # - The Defense: defense.md
-  # - FAQ: faq.md
-
-
-  # - S1 - Development Environment 💻:
-  #   - s1_development_environment/README.md
-  #   - M1 - The command line: s1_development_environment/command_line.md
-  #   - M2 - Package Manager: s1_development_environment/package_manager.md
+  - 🏠 Home: index.md
+  - 🚀 Before starting: before.md
+  - 📖 During the thesis:
+    - ✨ Getting started: starting.md
+    - 💻 Code: code.md
+    - 📝 Writing the thesis: writing.md
+  - 🎤 The Defense: defense.md
+  - ❓ FAQ: faq.md
