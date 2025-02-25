@@ -17,4 +17,4 @@ mkdocs serve
 uv run mkdocs serve
 ```
 
-Documentation is online here: <https://SkafteNicki/dtu_cs_thesis/>
+Documentation is online here: <https://skaftenicki.github.io/dtu_cs_thesis/>

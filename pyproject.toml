@@ -8,3 +8,8 @@ dependencies = [
     "mkdocs-glightbox>=0.4.0",
     "mkdocs-material>=9.6.5",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.1.0",
+]
