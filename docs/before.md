@@ -12,6 +12,28 @@ be working on the project for 5+ months and burnout is a real thing. So, even if
 the initial project idea, you can still influence the project during the process to make it more interesting for you.
 Remember, in the end it is your thesis 🎓
 
+When considering project, think about what parts of computer science that you find most interesting. Very broadly,
+computer science can be divided into four quadrants:
+
+<figure markdown="span">
+  ![scope](figures/quadrants.png){ width="300" }
+</figure>
+
+1. **Theory**: This is the mathematical and theoretical part of computer science. It is about understanding the
+    fundamental limits of computation and algorithms. If you like math and theory, this is the place for you.
+
+2. **Software**: This is about understanding and working with software. It is about understanding how to design, build
+    and maintain software. If you like programming and software development, this is the place for you.
+
+3. **Data**: This is about understanding and working with data. It is about understanding how to store, process and
+    analyze data. If you like working with data, this is the place for you.
+
+4. **Modelling**: This is about understanding and working with complex systems. It is about understanding how to model
+    and simulate systems. If you like understanding complex systems, this is the place for you.
+
+You will be needing to do a little bit of everything in your thesis but there is a lot of freedom in choosing what
+you want to focus on. So, think about what you find most interesting and try to find a project that fits that.
+
 ## 🧙‍♂️ Finding a supervisor
 
 Regardless of how you find a project, you need a supervisor from DTU to register the project and guide you through the
