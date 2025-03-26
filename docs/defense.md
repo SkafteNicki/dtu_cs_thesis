@@ -24,4 +24,14 @@ be present. You are free to invite friends and family to the defense. The format
 4. You get pulled in (without friends and family) and you are told the grade. You will most likely be given some
     feedback for you to understand why you got the grade you got.
 
-That's it. You are now either a Bachelor or a Master of Science. Congratulations!
+
+
+Finally, you should not be nervous. You have done the work and you know your project better than anyone else. Just be
+honest and open and you will do fine. In general, students tend to get good grades, see figure below.
+
+<figure markdown="span">
+  ![scope](figures/grade_distribution.png){ width="500" }
+  <figcaption>Grade distribution for BsC and MsC projects supervised by the author.</figcaption>
+</figure>
+
+That's it. You are now either a Bachelor or a Master of Science. Congratulations 🎉
