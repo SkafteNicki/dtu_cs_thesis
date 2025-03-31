@@ -6,7 +6,7 @@ app = Typer()
 
 
 @app.command()
-def create_quadrants():
+def quadrants():
     # Create a blank figure
     fig = go.Figure()
 
@@ -101,9 +101,9 @@ def create_quadrants():
 
 
 @app.command()
-def create_grade_distribution():
+def grade_distribution():
     grade = [-3, 0, 2, 4, 7, 10, 12]
-    count = [0, 1, 1, 1, 3, 16, 24]
+    count = [0, 1, 1, 1, 4, 16, 25]
 
     # Calculate total count and percentages
     total_count = sum(count)
@@ -132,8 +132,10 @@ def create_grade_distribution():
         yaxis=dict(
             tickfont=dict(size=14),
             tickformat=".1f%",  # Format y-axis as percentage
+            range=[0, max(percentage) * 1.2],
         ),
         bargap=0.05,  # Reduce whitespace between bars
+        margin=dict(t=80),
     )
 
     output_path = Path(__file__).parent.absolute() / "figures/grade_distribution.png"
