@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#code-development-during-your-project" class="md-skip">
+        <a href="#version-control" class="md-skip">
           Skip to content
         </a>
       
@@ -378,8 +378,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -410,8 +408,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -422,16 +418,16 @@
         <li class="md-nav__item">
   <a href="#version-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Version control
+      🔄 Version control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-style" class="md-nav__link">
+  <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Code style
+      📦 Dependencies
     </span>
   </a>
   
@@ -440,7 +436,16 @@
         <li class="md-nav__item">
   <a href="#code-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Code documentation
+      📝 Code documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware
     </span>
   </a>
   
@@ -543,8 +548,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -555,16 +558,16 @@
         <li class="md-nav__item">
   <a href="#version-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Version control
+      🔄 Version control
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#code-style" class="md-nav__link">
+  <a href="#dependencies" class="md-nav__link">
     <span class="md-ellipsis">
-      Code style
+      📦 Dependencies
     </span>
   </a>
   
@@ -573,7 +576,16 @@
         <li class="md-nav__item">
   <a href="#code-documentation" class="md-nav__link">
     <span class="md-ellipsis">
-      Code documentation
+      📝 Code documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hardware
     </span>
   </a>
   
@@ -598,11 +610,19 @@
   
 
 
-<h1 id="code-development-during-your-project">Code development during your project</h1>
+  <h1>💻 Code</h1>
+
 <p>Regardless of what your project scope is, you will need to write code. Importantly, the code is therefore a critical
 part of your project. This section will provide you with some guidance on how to manage your code development during
-your project.</p>
-<h2 id="version-control">Version control</h2>
+your project. In the end of your project, I would expect you to hand in your code together with your thesis:</p>
+<ol>
+<li>Assuming your code is hosted on a version control system (e.g., Git) and that the code is open-source, you can
+    just provide a link to the repository in the preface of your thesis.</li>
+<li>If your code is not open-source (common in industry projects), you can provide the code as a zip file together with
+    your thesis.</li>
+<li>If you are under a strict NDA, you should not provide the code at all.</li>
+</ol>
+<h2 id="version-control">🔄 Version control</h2>
 <blockquote>
 <p>Code not tracked by version control is code that does not exist.</p>
 </blockquote>
@@ -611,8 +631,82 @@ code development that it is hard to overstate its importance. Version control al
 over time, collaborate with others and manage different versions of your code. There are many version control systems
 available, but the most popular one is <a href="https://en.wikipedia.org/wiki/Git">Git</a>. For hosting your code, you can either
 use <a href="https://github.com/">Github</a> or DTU computes <a href="https://lab.compute.dtu.dk">Gitlab</a> instance.</p>
-<h2 id="code-style">Code style</h2>
-<h2 id="code-documentation">Code documentation</h2>
+<p>If you do not know how to use Git (or are new to Git), here are some resources to get you started:</p>
+<ul>
+<li>
+<p><a href="https://git-scm.com/book/en/v2">Pro Git book</a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=8JJ101D3knE">Git Tutorial for Beginners in 1 hour</a></p>
+</li>
+</ul>
+<h2 id="dependencies">📦 Dependencies</h2>
+<p>Regardless of what programming language you are using, you will most likely need to use some libraries or packages that
+are not part of the standard library. These dependencies are critical to your project, and you need to manage them
+properly. How you manage dependencies depends on the programming language you are using.</p>
+<div class="admonition example">
+<p class="admonition-title">Python</p>
+<p>In Python anno 2025 that are two main ways to manage and document your dependencies. Either you use
+<a href="https://github.com/pypa/pip">pip</a> together with a <code>requirements.txt</code> file or you use
+<a href="https://docs.astral.sh/uv/">uv</a> together with a <code>pyproject.toml</code> file. Yes, there are other ways to manage
+dependencies in Python, but these are the ways I would recommend.</p>
+<p>As a example, we consider the case where we need to use <code>pandas</code> and <code>scikit-learn</code> in our project.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">pip + requirements.txt</label><label for="__tabbed_1_2">uv + pyproject.toml</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Run the following command to install the dependencies:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pandas<span class="w"> </span>scikit-learn
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pip<span class="w"> </span>freeze<span class="w"> </span>&gt;<span class="w"> </span>requirements.txt
+</span></code></pre></div>
+<p>This will create a <code>requirements.txt</code> file that looks like this:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pandas==1.3.3
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>scikit-learn==1.0
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Run the following command to install the dependencies:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>uv<span class="w"> </span>init
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>uv<span class="w"> </span>add<span class="w"> </span>pandas<span class="w"> </span>scikit-learn
+</span></code></pre></div>
+<p>This will create a <code>pyproject.toml</code> file that contains the dependencies:</p>
+<div class="language-toml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="s2">&quot;pandas&quot;</span><span class="p">,</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="s2">&quot;scikit-learn&quot;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="p">]</span>
+</span></code></pre></div>
+</div>
+</div>
+</div>
+</div>
+<h2 id="code-documentation">📝 Code documentation</h2>
+<blockquote>
+<p>Undocumented code is code that does not run.</p>
+</blockquote>
+<p>Again, not technically true, but you get the point. Code documentation is critical to ensure that your code is usable by
+others (or your future self). There are many ways to document your code, but the most common way is to use a
+<code>README.md</code> file in the root of your project. This file should contain information about how to install and run your
+code. An example</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="gh"># My awesome project</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>To run this project, you need to have Python X.Y or later installed. You can install the dependencies
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>by running
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="sb">`pip install -r requirements.txt`</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>To run the main experiments you can run the following command:
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="sb">`python main.py`</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>afterwards to generate the plots you can run the following command:
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="sb">`python plot.py`</span>
+</span></code></pre></div>
+</div>
+<p>In addition to the <code>README.md</code> file, you should preferably also document your code using appropriate comments. The
+comments should explain what the code does, not how it does it. A good example is just adding docstrings to your
+functions/classes describing what they do.</p>
+<h2 id="hardware">Hardware</h2>
 
 
 
