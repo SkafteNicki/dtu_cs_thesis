@@ -1,5 +1,3 @@
-# The defense
-
 Yeah, you are nearly there. You handed in the thesis and you are only missing the defense. But what are the actual
 rules and format? Here is a short overview:
 
