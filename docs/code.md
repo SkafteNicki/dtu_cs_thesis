@@ -25,6 +25,9 @@ If you do not know how to use Git (or are new to Git), here are some resources t
 
 * [Git Tutorial for Beginners in 1 hour](https://www.youtube.com/watch?v=8JJ101D3knE)
 
+and [this learning module](https://skaftenicki.github.io/dtu_mlops/s2_organisation_and_version_control/git/) from DTU
+course 02476.
+
 ## 📦 Dependencies
 
 Regardless of what programming language you are using, you will most likely need to use some libraries or packages that
@@ -104,7 +107,9 @@ code. An example
 
 In addition to the `README.md` file, you should preferably also document your code using appropriate comments. The
 comments should explain what the code does, not how it does it. A good example is just adding docstrings to your
-functions/classes describing what they do.
+functions/classes describing what they do. For more information on good coding practices, I will refer to this
+[learning module](https://skaftenicki.github.io/dtu_mlops/s2_organisation_and_version_control/good_coding_practice/)
+for DTU course 02476.
 
 ## 🧰 Hardware
 
