@@ -1,0 +1,30 @@
+\chapter{Colours} \label{sec:colours}
+The design guide define 3 primary colours (dtured, white and black) and 10 secondary colours \url{https://www.designguide.dtu.dk/#stnd-colours}. Below are codes for the various colour modes. RGB is used for web and Office Programmes. CMYK is used for print. HTML is used for HTML-coding. If you know anything about colour codes you might notice that the RGB codes are ranging from 0-1 instead of the usual 0-255.
+
+\begin{testcolors}[rgb,cmyk,HTML]
+\testcolor{dtured}
+\testcolor{white}
+\testcolor{black}
+\testcolor{blue}
+\testcolor{brightgreen}
+\testcolor{navyblue}
+\testcolor{yellow}
+\testcolor{orange}
+\testcolor{pink}
+\testcolor{red}
+\testcolor{green}
+\testcolor{purple}
+\end{testcolors}
+
+The default colour mode for this template is cmyk. The current colour model is \targetcolourmodel~which is also illustrated by the underlined numbers in the colour test table above.  If you which to change the colour model to rgb go to Setup/Settings.tex and change \texttt{targetcolourmodel} to rgb. In Setup/Settings.tex it is also possible to change the background colour of the front and back page. The colours are primarily used for diagrams (the plotcyclelist DTU) and the front and back page.
+
+Lighter colours can be achieved as written in the \LaTeX{} code below. For example to get a tint of 50\% you would write colourname!50.  \newline
+{\raggedright
+\textcolor{dtured}{Normal dtured} \qquad
+\textcolor{dtured!80}{80\% dtured} \qquad
+\textcolor{dtured!70}{70\% dtured} \qquad
+\textcolor{dtured!60}{60\% dtured} \qquad
+\textcolor{dtured!50}{50\% dtured}
+}
+\newline
+For more information about colours in \LaTeX{} read the \texttt{xcolor} manual.
