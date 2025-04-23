@@ -12,8 +12,12 @@ be working on the project for 5+ months and burnout is a real thing. So, even if
 the initial project idea, you can still influence the project during the process to make it more interesting for you.
 Remember, in the end it is your thesis 🎓
 
-When considering project, think about what parts of computer science that you find most interesting. Very broadly,
-computer science can be divided into four quadrants:
+When considering project, think about what parts of computer science that you find most interesting. Very broadly, a
+thesis within computer science can be divided into four categories(1)
+{ .annotate }
+
+1. :man_raising_hand: Yes, this is a brute simplification of the field of computer science, but it is a good way to
+    think about what you find interesting and in my experience is still fairly covering.
 
 <figure markdown="span">
   ![scope](figures/quadrants.png){ width="300" }
@@ -31,8 +35,11 @@ computer science can be divided into four quadrants:
 4. **Modelling**: This is about understanding and working with complex systems. It is about understanding how to model
     and simulate systems. If you like understanding complex systems, this is the place for you.
 
-You will be needing to do a little bit of everything in your thesis but there is a lot of freedom in choosing what
-you want to focus on. So, think about what you find most interesting and try to find a project that fits that.
+You will most likely be working with a combination of these four categories, but it is a good idea to think about what
+you find most interesting. For example, if you are doing a project in the field of machine learning, you will most
+likely be working with data and modelling as the primary focus. That said, you can put more focus on software by
+implementing not just a model but a hole ML system and in the same way you can put more focus on theory by
+understanding the theoretical limits of the model you are using.
 
 ## 🧙‍♂️ Finding a supervisor
 
@@ -91,7 +98,7 @@ They will look something like this:
     * masters technical problem-solving at a high level through cross-disciplinary teamwork, and can work with and
         manage all phases of a project – including preparation of timetables, design, solution, and documentation
 
-All these learning objectives are fairly *meta*, but they can interpreted as you need to master every aspect of doing
+All these learning objectives are fairly *meta*, but they can interpret as you need to master every aspect of doing
 a thesis from the technical aspects to the communication and project management.
 
 ## 💾 Registering the project

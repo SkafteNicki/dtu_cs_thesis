@@ -68,7 +68,7 @@ That is the overall statement regarding the use of AI at DTU. Therefore, you are
 in your thesis as much as possible. However, you should be *transparent* about it. This means that you should disclose
 in the thesis that you have used generative AI. DTU follows the Vancouver Convention for citing AI-generated text.
 
-!!! note " "
+!!! note "Vancouver Convention"
 
     At submission, the journal should require authors to disclose whether they used Artificial Intelligence (AI)–
     assisted technologies (such as Large Language Models [LLMs], chatbots, or image creators) in the production of

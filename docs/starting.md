@@ -2,16 +2,16 @@ Alright, you have now started the thesis. What do to next?
 
 ## The first month
 
-The first month of the thesis depends a lot on the project you are doing. If the project is very well defined you will
+The first month of the thesis depends a lot on the project you are doing. If the project is very well-defined you will
 find that you can start coding and analyzing data right away. However, in most cases you will need to spend some time
-reading literature and getting a better understanding of the problem you are trying to solve. This is completely normal
+reading literature and getting a better understanding of the problem you are trying to solve. This is completely normal,
 and you should not be worried about it. In general expect to
 
 1. Read literature
 
 2. Begin analyzing data
 
-3. Write
+3. Write some initial code
 
 When you are closing in on the first month you need to hand-in a project plan.
 
@@ -32,7 +32,7 @@ understand what you are doing. In general the project plan should contain the fo
 
 3. **Research question**:
     Most important part of the project plan. What is the overall research question you are trying to answer? You
-    can have more than one, but try to keep it to a minimum. The research question should be specific and well defined,
+    can have more than one, but try to keep it to a minimum. The research question should be specific and well-defined,
     because in the end this is the question you should be answering with your thesis. Consider the
     [scientific method](https://en.wikipedia.org/wiki/Scientific_method) when writing the research question.
 

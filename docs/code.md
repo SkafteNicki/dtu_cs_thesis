@@ -106,7 +106,7 @@ In addition to the `README.md` file, you should preferably also document your co
 comments should explain what the code does, not how it does it. A good example is just adding docstrings to your
 functions/classes describing what they do.
 
-## Hardware
+## 🧰 Hardware
 
 As any other DTU student you have access to the HPC cluster at DTU. You have hopefully already been introduced and
 used it in one of your courses. If not, you can find more information about the cluster on the
