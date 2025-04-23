@@ -107,3 +107,20 @@ comments should explain what the code does, not how it does it. A good example i
 functions/classes describing what they do.
 
 ## Hardware
+
+As any other DTU student you have access to the HPC cluster at DTU. You have hopefully already been introduced and
+used it in one of your courses. If not, you can find more information about the cluster on the
+[DTU HPC website](https://www.hpc.dtu.dk/). In particular here are some useful links:
+
+* Getting started with ML/AI: <https://www.hpc.dtu.dk/?page_id=4788>
+* GPU nodes overview: <https://www.hpc.dtu.dk/?page_id=2129>
+
+!!! note "Space on the HPC cluster"
+
+    The most common limitation you will run into at the HPC cluster is the space limitation. You by default have 30GB
+    of space in your home directory. See this [page](https://www.hpc.dtu.dk/?page_id=927) for info on how to check
+    your space usage. If you need more space you can write to <support@hpc.dtu.dk> to get some space on the scratch
+    filesystem (about 300GB is usually given).
+
+If you are collaborating with a company, you might also have access to their hardware. Ask your external supervisor if
+you are not sure.

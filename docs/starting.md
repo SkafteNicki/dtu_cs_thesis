@@ -56,4 +56,4 @@ your research question is essentially the hypothesis you are trying to prove or 
 </figcaption>
 </figure>
 
-Below are some examples of project plans from previous students.
+For examples of project plans, ask your supervisor if they have any examples.
