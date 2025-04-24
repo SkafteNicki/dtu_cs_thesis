@@ -20,22 +20,35 @@ Your thesis should follow common academic structure overall which includes but n
 * Conclusion
 
 That said, the most important thing is that you tell a good coherent story that is easy to read. Therefore, if this
-means that you need to deviate from the common structure, then do so. Here are links to project I have supervised that
+means that you need to deviate from the common structure, then do so. Here are links to projects I have supervised that
 follows the more common structure (available for download through DTU library, requires DTU account):
 
 * 📄 MsC thesis:
     [Context-Aware Object Detection with use of deep learning](https://findit.dtu.dk/en/catalog/64bc70021afc143131e3e010)
     by Spyridon Vlachospyros
 
+* 📄 MsC thesis:
+    [End-to-end machine learning project on classification of EEG signal of depressed patients](https://findit.dtu.dk/en/catalog/640148e491aff93c12cdefb4)
+    by Bekarys Gabdrakhimov
+
+* 📄 MsC thesis:
+    [Logical Fallacy detection using LLMs](https://findit.dtu.dk/en/catalog/67f0750350e1e912f322623c)
+    by Eleftherios Katiforis
+
 * 📄 BsC thesis:
     [Exploring the Extensions and Limitations of Metadata Archaeology via Probe Dynamics](https://findit.dtu.dk/en/catalog/64a3639af9bc5991525ff8f6)
     by Joachim Andersson and Jonas Hoffmann
 
-Here is an example of a thesis that does not follow the common structure, because the reading flow is better this way:
+Here is an example of projects where the final thesis does not follow the common structure, because the reading flow
+is better this way:
 
 * 📄 MsC thesis:
     [AutoML and Meta-learning through data science competitions](https://findit.dtu.dk/en/catalog/64e54e3c60a0982052407549)
     by Jonah Jad Tabbal
+
+* 📄 MsC thesis:
+    [Backtesting and Deploying Systematic Trading Strategies with Machine Learning and MLOps](https://findit.dtu.dk/en/catalog/67b923eda64f3666d7ead405)
+    by Nael Rashdeen
 
 ## 📊 Figures
 
