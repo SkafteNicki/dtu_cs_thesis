@@ -1,6 +1,6 @@
 Alright, you have now started the thesis. What do to next?
 
-## The first month
+## 🟢 The first month
 
 The first month of the thesis depends a lot on the project you are doing. If the project is very well-defined you will
 find that you can start coding and analyzing data right away. However, in most cases you will need to spend some time
@@ -15,7 +15,7 @@ and you should not be worried about it. In general expect to
 
 When you are closing in on the first month you need to hand-in a project plan.
 
-## The project plan
+## 🗓️ The project plan
 
 You have two hand-ins during your thesis: a project plan precisely 1 month after starting the project and your thesis.
 The project plan is a short document (2-3 pages) where you in more details describe what you are going to be doing
@@ -57,3 +57,21 @@ your research question is essentially the hypothesis you are trying to prove or 
 </figure>
 
 For examples of project plans, ask your supervisor if they have any examples.
+
+The project plan should be handed in 1 month after starting the project. After registering the thesis a project/group
+will be created in Campusnet <https://campusnet.dtu.dk> where you under the "Assignments" tab should be able to find the
+project plan assignment. The project plan should be handed in as a PDF file.
+
+## 📚 Keeping a logbook
+
+You should really keep a logbook throughout the thesis. You are not going to remember what you did in the beginning of
+the thesis when you reach the end of the thesis, without having taken notes along the way. Here are some general ways
+of doing this (ordered by complexity):
+
+* 💡 Create a running powerpoint/google slides presentation where you each week add 1 or 2 slides with what you have done,
+    any figures you have produced, relevant literature etc. Think of it as a dumping ground for all your thoughts.
+    Really easy to get started with, but in the end you may have a 100-page slidedeck to look through.
+
+* 💡 Use [Notion](https://www.notion.com) (online) /[Obsidian](https://obsidian.md/) (local) to document your findings
+    and thoughts using markdown. This is a bit more complex to setup and use, but you can begin to structure your notes
+    and make them searchable.
