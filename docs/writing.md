@@ -73,6 +73,24 @@ Finally, remember to refer to the figures in the text and describe it at least s
 figure or do not use the figure in the text, it is a good indication that the figure is not needed and should be removed
 from your thesis.
 
+## 📖 References
+
+As part of your thesis you are required to include relevant references and citations. This is standard scientific
+practice. Importantly, anything can count as a reference. This includes but is not limited to:
+
+* Books
+* Papers
+* Blogs
+* Code repositories
+* Technical documentation
+* Websites
+* ...
+
+However, it is highly recommended that you at least have a handful of scientific papers (peers reviewed) in your
+references. There is no strict requirement for how many references you should have, but a good rule of thumb is to
+have at least 30+ references.
+
+
 ## 🤖 Generative AI
 
 > DTU is embracing the use of AI in teaching
@@ -103,3 +121,34 @@ in the thesis that you have used generative AI. DTU follows the Vancouver Conven
 Thus, in the appendix of your thesis you should add a section where you describe how you have used generative AI in your
 thesis. The most up-to-date guidelines regarding DTU rules regarding the use of generative AI can be found
 [here](https://ai.dtu.dk/)
+
+# 🧩 Miscellaneous
+
+* When referring to a figure, table, appendix, section, etc. always capitalize the first letter and preferably use the
+    abbreviation. For example, "Figure 1" instead of "figure 1" or "Fig. 1". This is a common practice in academic
+    writing. More examples:
+
+    ```txt
+    See figure 1 -> Figure 1 or Fig. 1
+    See table 1 -> Table 1 or Tab. 1
+    See appendix A -> Appendix A or App. A
+    See section 1 -> Section 1 or Sec. 1
+    See equation 1 -> Equation 1 or Eq. 1
+    See algorithm 1 -> Algorithm 1 or Alg. 1
+    ```
+
+* When citing multiple references in latex instead of doing
+
+    ```latex
+    As shown in \cite{ref1}\cite{ref2}\cite{ref3}
+    # Renders as: As shown in [1][2][3]
+    ```
+
+    do
+
+    ```latex
+    As shown in \cite{ref1, ref2, ref3}
+    # Renders as: As shown in [1, 2, 3]
+    ```
+
+    Preferably, make sure the references are sorted in the list by number.

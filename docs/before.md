@@ -137,3 +137,16 @@ be done about two weeks before you start the work. For your supervisor to regist
         ones that are not registering the thesis.
 
 Note that the title and description should be provided in both Danish and English.
+
+## 🗣️ Setting expectations
+
+As the final step before starting the project, you should set expectations with your supervisor. This is important to
+make sure that you are on the same page and that you know what is expected of you. Consider the following questions:
+
+* What is the expected outcome of the project?
+
+* What grade do you expect to get?
+
+* What should the meeting schedule be? Regular vs. ad-hoc meetings? Physical vs. online meetings?
+
+* What means of communication should be used? Email, Teams, Slack, etc.?
