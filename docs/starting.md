@@ -15,6 +15,17 @@ and you should not be worried about it. In general expect to
 
 When you are closing in on the first month you need to hand-in a project plan.
 
+!!! note "Thesis template"
+
+    If you want a barebone thesis template to get started with I have created one that is included in this repository.
+    It is a [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template that you can use to create a new
+    thesis project with
+
+    ```bash
+    pip install cookiecutter
+    cookiecutter https://github.com/SkafteNicki/dtu_cs_thesis
+    ```
+
 ## The project plan
 
 You have two hand-ins during your thesis: a project plan precisely 1 month after starting the project and your thesis.
