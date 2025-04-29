@@ -36,6 +36,8 @@ repos:
     rev: v1.20.7
     hooks:
       - id: typos
+        args: [ ]
+        exclude: .gitignore
 
   - repo: https://github.com/tox-dev/pyproject-fmt
     rev: 1.7.0
