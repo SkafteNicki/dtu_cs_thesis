@@ -20,5 +20,6 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "invoke>=2.2.0",
     "pre-commit>=4.1.0",
 ]

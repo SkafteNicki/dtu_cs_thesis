@@ -199,12 +199,13 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "invoke" },
     { name = "pre-commit" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "cookiecutter", specifier = ">=2.6.0" },
+    { name = "cookiecutter", specifier = ">=2.6" },
     { name = "mkdocs-glightbox", specifier = ">=0.4" },
     { name = "mkdocs-material", specifier = ">=9.6.5" },
     { name = "plotly", specifier = ">=6.0.1" },
@@ -212,7 +213,10 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pre-commit", specifier = ">=4.1.0" }]
+dev = [
+    { name = "invoke", specifier = ">=2.2.0" },
+    { name = "pre-commit", specifier = ">=4.1.0" },
+]
 
 [[package]]
 name = "filelock"
@@ -251,6 +255,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f1/70/7703c29685631f5a7590aa73f1f1d3fa9a380e654b86af429e0934a32f7d/idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9", size = 190490 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3", size = 70442 },
+]
+
+[[package]]
+name = "invoke"
+version = "2.2.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f9/42/127e6d792884ab860defc3f4d80a8f9812e48ace584ffc5a346de58cdc6c/invoke-2.2.0.tar.gz", hash = "sha256:ee6cbb101af1a859c7fe84f2a264c059020b0cb7fe3535f9424300ab568f6bd5", size = 299835 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0a/66/7f8c48009c72d73bc6bbe6eb87ac838d6a526146f7dab14af671121eb379/invoke-2.2.0-py3-none-any.whl", hash = "sha256:6ea924cc53d4f78e3d98bc436b08069a03077e6f85ad1ddaa8a116d7dad15820", size = 160274 },
 ]
 
 [[package]]
