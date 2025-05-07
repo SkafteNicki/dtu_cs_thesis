@@ -35,36 +35,6 @@ purple,         fill=purple         \\%
 }
 
 
-% Font
-% There is no corporate serif font in the DTU design guide. The DTU design team has proposed to use Neo Sans for headings - and Arial for the body text.
-% To change heading font to NeoSans Pro please upload both NeoSansPro-Regular.otf and NeoSansPro-Medium.otf to the root directory.
-\setmainfont{Arial}
-\renewcommand\thepart{Part \Roman{part}}
-\IfFontExistsTF{NeoSansPro-Medium.otf}
-{ %If True set headings to NeoSans Pro
-\newfontface\NeoSansProReg{NeoSansPro-Regular.otf}
-\newfontface\NeoSansProMed{NeoSansPro-Medium.otf}
-\titleformat{\part}[display]{\NeoSansProMed \huge \centering}{\NeoSansProMed \Huge \thepart}{1em}{\thispagestyle{empty}}{}
-\titleformat{\chapter}{\NeoSansProMed\huge}{\thechapter}{1em}{\raggedright}
-\titleformat{\section}{\NeoSansProMed\Large}{\thesection}{1em}{\raggedright}
-\titleformat{\subsection}{\NeoSansProMed\large}{\thesubsection}{1em}{\raggedright}
-\titleformat{\subsubsection}{\NeoSansProMed\normalsize}{\thesubsubsection}{1em}{\raggedright}
-\newcommand\TitleFont[1]{{\NeoSansProMed #1}}
-\newcommand\titlefont[1]{{\NeoSansProReg #1}}
-}
-{ % If false
-\titleformat{\part}[display]{\bfseries\huge \centering}{\bfseries\Huge \thepart}{1em}{\thispagestyle{empty}}{}
-\titleformat{\chapter}{\bfseries\huge}{\thechapter}{1em}{\raggedright}
-\titleformat{\section}{\bfseries\Large}{\thesection}{1em}{\raggedright}
-\titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{\raggedright}
-\titleformat{\subsubsection}{\bfseries\normalsize}{\thesubsubsection}{1em}{\raggedright}
-\newcommand\TitleFont[1]{{\bfseries #1}}
-\newcommand\titlefont[1]{{#1}}
-}
-\urlstyle{sf}
-%\def\UrlFont{\NeoSansProReg}
-
-
 % If you wish to use the pdflatex compiler, sans-serif Helvetica can be used as a replacement for Arial. In this way you will be able to use the microtype package. Remember to add \usepackage[utf8]{inputenc} and disable the fontspec package.
 %\newcommand\TitleFont[1]{{\bfseries #1}}
 %\newcommand\titlefont[1]{{#1}}

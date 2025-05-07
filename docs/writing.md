@@ -153,3 +153,9 @@ thesis. The most up-to-date guidelines regarding DTU rules regarding the use of 
     ```
 
     Preferably, make sure the references are sorted in the list by number.
+
+# 🔍 Supervisor Review
+
+If you want feedback on your thesis, ask your supervisor if they are willing to do it. There are no formal rules on how
+much/little your supervisor may help with your thesis, but ask them in good time, and they will most likely be happy to
+help you.

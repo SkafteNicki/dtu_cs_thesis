@@ -19,12 +19,72 @@ When you are closing in on the first month you need to hand-in a project plan.
 
     If you want a barebone thesis template to get started with I have created one that is included in this repository.
     It is a [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template that you can use to create a new
-    thesis project with
+    thesis project by running the following command in your terminal:
 
     ```bash
     pip install cookiecutter
     cookiecutter https://github.com/SkafteNicki/dtu_cs_thesis
     ```
+
+    and answer the questions in the terminal. It contains a basic structure for the thesis, your project plan and
+    general code structure.
+
+    ??? example "Template structure"
+
+        ```bash
+        project_name/
+        ├── .devcontainer
+        │   ├── devcontainer.json
+        │   └── post_create.sh
+        ├── .gitignore
+        ├── LICENSE
+        ├── notebooks
+        │   └── .gitkeep
+        ├── project_plan
+        │   ├── bibliography.bib
+        │   ├── main.pdf
+        │   ├── main.tex
+        │   ├── time_plan.ods
+        │   └── time_plan.png
+        ├── pyproject.toml
+        ├── README.md
+        ├── scripts
+        │   └── .gitkeep
+        ├── src
+        │   └── .gitkeep
+        └── thesis
+            ├── Backmatter
+            │   ├── Appendix.tex
+            │   └── Backpage.tex
+            ├── bibliography.bib
+            ├── Chapters
+            │   ├── 01_Introduction.tex
+            │   ├── 02_Colours.tex
+            │   └── 03_Examples.tex
+            ├── Frontmatter
+            │   ├── Abstract.tex
+            │   ├── Acknowledgements.tex
+            │   ├── Approval.tex
+            │   ├── Copyright.tex
+            │   └── Frontpage.tex
+            ├── main.pdf
+            ├── main.tex
+            ├── Pictures
+            │   ├── DTU_stock_photo.jpg
+            │   └── Logos
+            │       ├── black_cmyk.pdf
+            │       ├── black_rgb.pdf
+            │       ├── dtured_cmyk.pdf
+            │       ├── dtured_rgb.pdf
+            │       ├── white_cmyk.pdf
+            │       └── white_rgb.pdf
+            ├── readme.md
+            └── Setup
+                ├── Preamble.tex
+                ├── Settings.tex
+                └── Statics.tex
+        ```
+
 
 ## 🗓️ The project plan
 

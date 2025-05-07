@@ -12,4 +12,4 @@ def clean(ctx: Context):
 @task
 def template(ctx: Context):
     """Generate a new project from template."""
-    ctx.run("uv run cookiecutter . -f --no-input")
+    ctx.run("uv run cookiecutter . -f --no-input", echo=True)
