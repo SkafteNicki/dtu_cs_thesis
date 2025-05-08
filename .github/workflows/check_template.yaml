@@ -48,6 +48,8 @@ jobs:
             titlesec
             parskip
             pgfplots
+            listings
+            siunitx
 
       - name: Compile project plan
         run: |
