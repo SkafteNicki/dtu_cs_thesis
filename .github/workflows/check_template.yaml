@@ -58,6 +58,7 @@ jobs:
             biblatex
             booktabs
             float
+            blindtext
 
       - name: Compile project plan
         run: |
