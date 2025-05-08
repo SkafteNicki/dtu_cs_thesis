@@ -46,6 +46,7 @@ jobs:
             inputenc
             microtype
             titlesec
+            parskip
 
       - name: Compile project plan
         run: |
