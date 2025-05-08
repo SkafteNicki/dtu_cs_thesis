@@ -30,10 +30,6 @@ jobs:
       - name: Print generated folder structure
         run: tree -a project_name
 
-      - name: Install necessary packages
-        run: |
-          sudo tlmgr install pgf
-
       - name: Set up TeX Live
         uses: teatimeguest/setup-texlive-action@v3
         with:
