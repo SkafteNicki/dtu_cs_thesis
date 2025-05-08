@@ -56,6 +56,8 @@ jobs:
             subcaption
             csquotes
             biblatex
+            booktabs
+            float
 
       - name: Compile project plan
         run: |
