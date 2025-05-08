@@ -2,9 +2,11 @@ name: Check Template
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   template:
@@ -29,7 +31,7 @@ jobs:
         run: tree -a project_name
 
       - name: Set up TeX Live
-        uses: teatimeguest/setup-texlive-action@v2
+        uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: >-
             scheme-basic
@@ -39,6 +41,7 @@ jobs:
             fontspec
             graphics
             tools
+            xcolor
 
       - name: Compile project plan
         run: |
