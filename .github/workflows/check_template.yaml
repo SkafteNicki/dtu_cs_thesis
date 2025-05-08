@@ -54,6 +54,8 @@ jobs:
             textcomp
             caption
             subcaption
+            csquotes
+            biblatex
 
       - name: Compile project plan
         run: |
