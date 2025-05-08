@@ -50,6 +50,8 @@ jobs:
             pgfplots
             listings
             siunitx
+            cleveref
+            textcomp
 
       - name: Compile project plan
         run: |
