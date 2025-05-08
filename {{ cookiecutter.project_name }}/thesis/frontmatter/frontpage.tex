@@ -9,12 +9,13 @@
 \color{\frontpagetextcolour}
 
 { % Thesis title (to change see Setup/Settings.tex)
-\Huge
-\begin{tabular}{p{\linewidth}}
-\TitleFont{\thesistitle}   \\
-\titlefont{\thesissubtitle} \bigskip \\
-{\huge \documenttype}
-\end{tabular}
+      \Huge
+      \begin{tabular}{p{\linewidth}}
+      \TitleFont{\thesistitle}   \\
+      \titlefont{\thesissubtitle} \bigskip \\
+      {\huge \documenttype} \\
+      {\huge \thesisauthor}
+      \end{tabular}
 }
 
 % DTU department (to change see Setup/Settings.tex)
@@ -38,7 +39,7 @@
       xshift=8.9mm,
       yshift=-8.3mm]
      at (current page.north west)
-     {\includegraphics[width=14.75mm,keepaspectratio]{Pictures/Logos/\dtulogocolour_\targetcolourmodel.pdf}};
+     {\includegraphics[width=14.75mm,keepaspectratio]{pictures/logos/\dtulogocolour_\targetcolourmodel.pdf}};
 \end{tikzpicture}
 
 % Cover photo
@@ -47,10 +48,7 @@
       xshift=0pt,
       yshift=-2.9mm] % shifting picture to actually be at the bottom of the page
      at (current page.south) % placement at bottom of the page
-     {\includegraphics[height=18.9cm,keepaspectratio]{Pictures/DTU_stock_photo.jpg}};
+     {\includegraphics[height=18.9cm,keepaspectratio]{pictures/DTU_stock_photo.jpg}};
 \end{tikzpicture}
-
-
-
 
 \end{titlepage}
