@@ -89,7 +89,7 @@ practice. Importantly, anything can count as a reference. This includes but is n
 However, it is highly recommended that you at least have a handful of scientific papers (peers reviewed) in your
 references. There is no strict requirement for how many references you should have, but a good rule of thumb is to
 have at least 30+ references. For keeping track of your references, you should use a reference manager. There are many
-reference managers out there, but I would recommend [Medeley](https://www.mendeley.com/) since DTU students gets
+reference managers out there, but I would recommend [Mendeley](https://www.mendeley.com/) since DTU students gets
 extended institutional edition for free.
 
 ## 🤖 Generative AI

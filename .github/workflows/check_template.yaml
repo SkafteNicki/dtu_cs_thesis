@@ -44,6 +44,7 @@ jobs:
             pgf
             xcolor
             inputenc
+            microtype
 
       - name: Compile project plan
         run: |
@@ -53,6 +54,20 @@ jobs:
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
 
+      - name: Check pdf was generated
+        run: |
+          cd project_name/project_plan
+          if [ ! -f main.pdf ]; then
+            echo "PDF file not found!"
+            exit 1
+          fi
+
+      - name: Upload project plan
+        uses: actions/upload-artifact@v4
+        with:
+          name: project_plan
+          path: project_name/project_plan/main.pdf
+
       - name: Compile thesis
         run: |
           cd project_name/thesis
@@ -60,6 +75,20 @@ jobs:
           bibtex main
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
+
+      - name: Check pdf was generated
+        run: |
+          cd project_name/thesis
+          if [ ! -f main.pdf ]; then
+            echo "PDF file not found!"
+            exit 1
+          fi
+
+      - name: Upload thesis
+        uses: actions/upload-artifact@v4
+        with:
+          name: thesis
+          path: project_name/thesis/main.pdf
 
       - name: Check devcontainer
         run: |
