@@ -45,6 +45,7 @@ jobs:
             xcolor
             inputenc
             microtype
+            titlesec
 
       - name: Compile project plan
         run: |
