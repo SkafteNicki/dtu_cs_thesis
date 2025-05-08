@@ -52,6 +52,8 @@ jobs:
             siunitx
             cleveref
             textcomp
+            caption
+            subcaption
 
       - name: Compile project plan
         run: |
