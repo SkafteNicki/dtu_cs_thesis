@@ -33,7 +33,7 @@ jobs:
       - name: Set up TeX Live
         uses: teatimeguest/setup-texlive-action@v3
         with:
-          packages: >-
+          packages: |
             scheme-basic
             latex
             latex-bin
@@ -43,6 +43,7 @@ jobs:
             tools
             pgf
             xcolor
+            inputenc
 
       - name: Compile project plan
         run: |
