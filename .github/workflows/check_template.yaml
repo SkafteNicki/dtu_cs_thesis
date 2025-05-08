@@ -47,6 +47,7 @@ jobs:
             microtype
             titlesec
             parskip
+            pgfplots
 
       - name: Compile project plan
         run: |
