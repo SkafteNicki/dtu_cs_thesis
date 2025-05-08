@@ -45,6 +45,7 @@ jobs:
             fontspec
             graphics
             tools
+            pgf
             xcolor
 
       - name: Compile project plan
@@ -60,3 +61,11 @@ jobs:
           bibtex project_name/thesis/main
           pdflatex -interaction=nonstopmode -halt-on-error project_name/thesis/main.tex
           pdflatex -interaction=nonstopmode -halt-on-error project_name/thesis/main.tex
+
+      - name: Check devcontainer
+        run: |
+          cd project_name
+          npx @devcontainers/cli build --workspace-folder .
+          npx @devcontainers/cli up --workspace-folder .
+        env:
+          TERM: xterm
