@@ -27,7 +27,9 @@ When you are closing in on the first month you need to hand-in a project plan.
     ```
 
     and answer the questions in the terminal. It contains a basic structure for the thesis, your project plan and
-    general code structure.
+    general code structure. For full reproducibility, it also contains a
+    [devcontainer](https://code.visualstudio.com/docs/devcontainers/create-dev-container) setup that will automatically
+    install all the dependencies needed to run code and write the thesis.
 
     ??? example "Template structure"
 
