@@ -1,11 +1,23 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
+set -e  # Exit on error
 
-# Install uv
+echo "🔧 Installing TeX Live and LaTeX tools..."
+sudo apt-get update
+sudo apt-get install -y --no-install-recommends \
+    texlive-latex-recommended \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    latexmk \
+    lmodern
+
+echo "📦 Installing uv..."
 curl -LsSf https://astral.sh/uv/install.sh | sh
-source $HOME/.cargo/env
 
-# Install Dependencies
-uv sync --all
+echo "🔁 Installing Python dependencies with uv..."
+uv sync --frozen --all-extras
 
-# Install pre-commit hooks
+echo "🧹 Installing pre-commit hooks..."
 uv run pre-commit install --install-hooks
+
+echo "✅ Post-create setup complete."
+echo "🚀 You can now start using your development container!"
