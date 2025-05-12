@@ -17,7 +17,7 @@ echo "🔁 Installing Python dependencies with uv..."
 uv sync --frozen --all-extras
 
 echo "🧹 Installing pre-commit hooks..."
-uv run pre-commit install --install-hooks
+uvx pre-commit install --install-hooks
 
 echo "✅ Post-create setup complete."
 echo "🚀 You can now start using your development container!"
