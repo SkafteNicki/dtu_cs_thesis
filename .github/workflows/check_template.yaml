@@ -37,6 +37,7 @@ jobs:
             scheme-basic
             latex
             latex-bin
+            latexmk
             xetex
             fontspec
             graphics
@@ -63,10 +64,7 @@ jobs:
       - name: Compile project plan
         run: |
           cd project_name/project_plan
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-          bibtex main
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          latexmk -synctex=1 -pdf -interaction=nonstopmode -file-line-error main
 
       - name: Check pdf was generated
         run: |
@@ -85,10 +83,7 @@ jobs:
       - name: Compile thesis
         run: |
           cd project_name/thesis
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-          biber main
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
-          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          latexmk -synctex=1 -pdf -interaction=nonstopmode -file-line-error main
 
       - name: Check pdf was generated
         run: |
