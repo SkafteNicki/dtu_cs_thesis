@@ -650,6 +650,68 @@ and you should not be worried about it. In general expect to</p>
 </li>
 </ol>
 <p>When you are closing in on the first month you need to hand-in a project plan.</p>
+<div class="admonition note">
+<p class="admonition-title">Thesis template</p>
+<p>If you want a barebone thesis template to get started with I have created one that is included in this repository.
+It is a <a href="https://cookiecutter.readthedocs.io/en/latest/">cookiecutter</a> template that you can use to create a new
+thesis project by running the following command in your terminal:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>cookiecutter
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cookiecutter<span class="w"> </span>https://github.com/SkafteNicki/dtu_cs_thesis
+</span></code></pre></div>
+<p>and answer the questions in the terminal. It contains a basic structure for the thesis, your project plan and
+general code structure. For full reproducibility, it also contains a
+<a href="https://code.visualstudio.com/docs/devcontainers/create-dev-container">devcontainer</a> setup that will automatically
+install all the dependencies needed to run code and write the thesis.</p>
+<details class="example">
+<summary>Template structure</summary>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>project_name/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├──<span class="w"> </span>.devcontainer
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│<span class="w">   </span>├──<span class="w"> </span>devcontainer.json
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│<span class="w">   </span>└──<span class="w"> </span>post_create.sh
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>├──<span class="w"> </span>.gitignore
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>├──<span class="w"> </span>LICENSE
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>├──<span class="w"> </span>notebooks
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>├──<span class="w"> </span>.pre-commit-config.yaml
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>├──<span class="w"> </span>project_plan
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│<span class="w">   </span>├──<span class="w"> </span>bibliography.bib
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│<span class="w">   </span>├──<span class="w"> </span>main.pdf
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│<span class="w">   </span>├──<span class="w"> </span>main.tex
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│<span class="w">   </span>├──<span class="w"> </span>time_plan.ods
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│<span class="w">   </span>└──<span class="w"> </span>time_plan.png
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>├──<span class="w"> </span>pyproject.toml
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>├──<span class="w"> </span>README.md
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>├──<span class="w"> </span>scripts
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>├──<span class="w"> </span>src
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>├──<span class="w"> </span>thesis
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>│<span class="w">   </span>├──<span class="w"> </span>backmatter
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>appendix.tex
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>backpage.tex
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>│<span class="w">   </span>├──<span class="w"> </span>bibliography.bib
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>│<span class="w">   </span>├──<span class="w"> </span>chapters
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>01_introduction.tex
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>│<span class="w">   </span>├──<span class="w"> </span>frontmatter
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>abstract.tex
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>acknowledgements.tex
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>approval.tex
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>copyright.tex
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>frontpage.tex
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>│<span class="w">   </span>├──<span class="w"> </span>main.pdf
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>│<span class="w">   </span>├──<span class="w"> </span>main.tex
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>│<span class="w">   </span>├──<span class="w"> </span>pictures
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>dtured_rgb.pdf
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>DTU_stock_photo.jpg
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>│<span class="w">   </span>├──<span class="w"> </span>readme.md
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>│<span class="w">   </span>└──<span class="w"> </span>setup
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>│<span class="w">       </span>├──<span class="w"> </span>info.tex
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>│<span class="w">       </span>├──<span class="w"> </span>preamble.tex
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>│<span class="w">       </span>└──<span class="w"> </span>settings.tex
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>└──<span class="w"> </span>uv.lock
+</span></code></pre></div>
+</details>
+</div>
 <h2 id="the-project-plan">🗓️ The project plan</h2>
 <p>You have two hand-ins during your thesis: a project plan precisely 1 month after starting the project and your thesis.
 The project plan is a short document (2-3 pages) where you in more details describe what you are going to be doing
