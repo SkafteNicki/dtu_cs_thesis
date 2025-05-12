@@ -1,0 +1,172 @@
+% Define colours from https://www.designguide.dtu.dk/
+\definecolor{dtured}    {rgb/cmyk}{0.6,0,0 / 0,0.91,0.72,0.23}
+\definecolor{blue}      {rgb/cmyk}{0.1843,0.2431,0.9176 / 0.88,0.76,0,0}
+\definecolor{brightgreen}{rgb/cmyk}{0.1216,0.8157,0.5098 / 0.69,0,0.66,0}
+\definecolor{navyblue}  {rgb/cmyk}{0.0118,0.0588,0.3098 / 1,0.9,0,0.6}
+\definecolor{yellow}    {rgb/cmyk}{0.9647,0.8157,0.3019 / 0.05,0.17,0.82,0}
+\definecolor{orange}    {rgb/cmyk}{0.9882,0.4627,0.2039 / 0,0.65,0.86,0}
+\definecolor{pink}      {rgb/cmyk}{0.9686,0.7333,0.6941 / 0,0.35,0.26,0}
+\definecolor{grey}      {rgb/cmyk}{0.8549,0.8549,0.8549 / 0,0,0,0.2}
+\definecolor{red}       {rgb/cmyk}{0.9098,0.2471,0.2824 / 0,0.86,0.65,0}
+\definecolor{green}     {rgb/cmyk}{0,0.5333,0.2078 / 0.89,0.05,1,0.17}
+\definecolor{purple}    {rgb/cmyk}{0.4745,0.1373,0.5569 / 0.67,0.96,0,0}
+
+\newcommand{\dtulogocolour}{white} % Colour of the DTU logo: white, black or dtured
+\newcommand{\frontpagetextcolour}{white} % front page text colour: white or black
+\colorlet{frontbackcolor}{blue} % Set the background colour of the front- and back page. Choose the colour so it matches the main colour of front page picture
+
+% DTU colours for diagrams
+% You might want to make the front/back page background colour the first colour in the plot cycle list.
+\pgfplotscreateplotcyclelist{DTU}{%
+dtured,         fill=dtured,        \\%
+blue,           fill=blue,          \\%
+brightgreen,    fill=brightgreen    \\%
+navyblue,       fill=navyblue       \\%
+yellow,         fill=yellow         \\%
+orange,         fill=orange         \\%
+grey,           fill=grey           \\%
+red,            fill=red            \\%
+green,          fill=green          \\%
+purple,         fill=purple         \\%
+}
+
+
+% Font
+% There is no corporate serif font in the DTU design guide. The DTU design team has proposed to use Neo Sans for headings - and Arial for the body text.
+% To change heading font to NeoSans Pro please upload both NeoSansPro-Regular.otf and NeoSansPro-Medium.otf to the root directory.
+\renewcommand\thepart{Part \Roman{part}}
+\titleformat{\part}[display]{\bfseries\huge \centering}{\bfseries\Huge \thepart}{1em}{\thispagestyle{empty}}{}
+\titleformat{\chapter}{\bfseries\huge}{\thechapter}{1em}{\raggedright}
+\titleformat{\section}{\bfseries\Large}{\thesection}{1em}{\raggedright}
+\titleformat{\subsection}{\bfseries\large}{\thesubsection}{1em}{\raggedright}
+\titleformat{\subsubsection}{\bfseries\normalsize}{\thesubsubsection}{1em}{\raggedright}
+\newcommand\TitleFont[1]{{\bfseries #1}}
+\newcommand\titlefont[1]{{#1}}
+\urlstyle{sf}
+%\def\UrlFont{\NeoSansProReg}
+
+
+% If you wish to use the pdflatex compiler, sans-serif Helvetica can be used as a replacement for Arial. In this way you will be able to use the microtype package. Remember to add \usepackage[utf8]{inputenc} and disable the fontspec package.
+%\newcommand\TitleFont[1]{{\bfseries #1}}
+%\newcommand\titlefont[1]{{#1}}
+%\fontfamily{qhv}\selectfont
+%\renewcommand{\familydefault}{\sfdefault}
+
+
+% Table of contents (TOC) and numbering of headings
+\setcounter{tocdepth}{1}    % Depth of table of content: sub sections will not be included in table of contents
+\setcounter{secnumdepth}{2} % Depth of section numbering: sub sub sections are not numbered
+
+\makeatletter % Reset chapter numbering for each part
+\@addtoreset{chapter}{part}
+\makeatother
+
+% Spacing of titles and captions
+\titlespacing\chapter{0pt}{0pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing\section{0pt}{12pt plus 3pt minus 3pt}{2pt plus 1pt minus 1pt}
+\titlespacing\subsection{0pt}{8pt plus 2pt minus 2pt}{0pt plus 1pt minus 1pt}
+\titlespacing\subsubsection{0pt}{4pt plus 1pt minus 1pt}{-2pt plus 1pt minus 1pt}
+\captionsetup{belowskip=\parskip,aboveskip=4pt plus 1pt minus 1pt}
+
+% Setup header and footer
+\fancypagestyle{main}{% All normal pages
+    \fancyhead{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[LE,RO]{\footnotesize \thepage}
+    \fancyfoot[RE,LO]{\footnotesize \thesistitle} % - \rightmark
+    \fancyhfoffset[E,O]{0pt}
+}
+\fancypagestyle{plain}{% Chapter pages
+    \fancyhead{}
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyfoot[LE,RO]{\footnotesize \thepage}
+    \fancyfoot[RE,LO]{\footnotesize \thesistitle} % - \leftmark
+    \fancyhfoffset[E,O]{0pt}
+}
+
+
+% Setup for diagrams and graphs (tikz pictures)
+\usetikzlibrary{spy}    % For magnifying anything within a tikzpicture, see the line graph
+\usepgfplotslibrary{statistics} % Package for the boxplot
+\pgfplotsset{ % Setup for diagrams
+compat=newest,
+major x grid style={line width=0.5pt,draw=grey},
+major y grid style={line width=0.5pt,draw=grey},
+legend style={at={(0.5,-0.1)}, anchor=north,fill=none,draw=none,legend columns=-1,/tikz/every even column/.append style={column sep=10pt}},
+axis line style={draw=none},
+tick style={draw=none},
+every axis/.append style={ultra thick},
+tick label style={/pgf/number format/assume math mode}, % To apply main font to tick labels (numbers on the axis)
+}
+\tikzset{every mark/.append style={scale=1.5}}
+
+
+% Hypersetup
+\hypersetup{
+    pdfauthor={\thesisauthor},
+    pdftitle={\thesistitle},
+    pdfsubject={\thesissubtitle},
+    pdfdisplaydoctitle,
+    bookmarksnumbered=true,
+    bookmarksopen,
+    breaklinks,
+    linktoc=all,
+    plainpages=false,
+    unicode=true,
+    colorlinks=false,
+    hidelinks,                        % Do not show boxes or coloured links.
+}
+
+
+% Listings setup
+\lstset{
+    basicstyle=\footnotesize\ttfamily,% the size of the fonts that are used for the code
+    commentstyle=\color{green},       % comment style
+    keywordstyle=\bfseries\ttfamily\color{blue}, % keyword style
+    numberstyle=\sffamily\tiny\color{grey}, % the style that is used for the line-numbers
+    stringstyle=\color{purple},       % string literal style
+    rulecolor=\color{grey},           % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+    breakatwhitespace=false,          % sets if automatic breaks should only happen at whitespace
+    breaklines=true,                  % sets automatic line breaking
+    captionpos=b,                     % sets the caption-position to bottom
+    deletekeywords={},                % if you want to delete keywords from the given language
+    escapeinside={\%*}{*)},           % if you want to add LaTeX within your code
+    frame=single,                     % adds a frame around the code
+    xleftmargin=4pt,
+    morekeywords={*,...},             % if you want to add more keywords to the set
+    numbers=left,                     % where to put the line-numbers; possible values are (none, left, right)
+    numbersep=10pt,                   % how far the line-numbers are from the code
+    showspaces=false,                 % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+    showstringspaces=false,           % underline spaces within strings only
+    showtabs=false,                   % show tabs within strings adding particular underscores
+    stepnumber=1,                     % the step between two line-numbers. If it's 1, each line will be numbered
+    tabsize=2,                        % sets default tabsize to 2 spaces
+    title=\lstname,                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+% Signature field
+\newlength{\myl}
+\newcommand{\namesigdatehrule}[1]{\par\tikz \draw [black, densely dotted, very thick] (0.04,0) -- (#1,0);\par}
+\newcommand{\namesigdate}[2][]{%
+\settowidth{\myl}{#2}
+\setlength{\myl}{\myl+10pt}
+\begin{minipage}{\myl}%
+\begin{center}
+    #2  % Insert name from the command eg. \namesigdate{\authorname}
+    \vspace{1.5cm} % Spacing between name and signature line
+    \namesigdatehrule{\myl}\smallskip % Signature line and a small skip
+    \small \textit{Signature} % Text under the signature line "Signature"
+    \vspace{1.0cm} % Spacing between "Signature" and the date line
+    \namesigdatehrule{\myl}\smallskip % Date line and a small skip
+    \small \textit{Date} % Text under date line "Date"
+\end{center}
+\end{minipage}
+}
+
+% For the back page: cleartoleftpage
+\newcommand*\cleartoleftpage{%
+  \clearpage
+  \ifodd\value{page}\hbox{}\newpage\fi
+}

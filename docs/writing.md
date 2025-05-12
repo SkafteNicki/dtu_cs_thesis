@@ -88,8 +88,9 @@ practice. Importantly, anything can count as a reference. This includes but is n
 
 However, it is highly recommended that you at least have a handful of scientific papers (peers reviewed) in your
 references. There is no strict requirement for how many references you should have, but a good rule of thumb is to
-have at least 30+ references.
-
+have at least 30+ references. For keeping track of your references, you should use a reference manager. There are many
+reference managers out there, but I would recommend [Mendeley](https://www.mendeley.com/) since DTU students gets
+extended institutional edition for free.
 
 ## 🤖 Generative AI
 
@@ -152,3 +153,9 @@ thesis. The most up-to-date guidelines regarding DTU rules regarding the use of 
     ```
 
     Preferably, make sure the references are sorted in the list by number.
+
+# 🔍 Supervisor Review
+
+If you want feedback on your thesis, ask your supervisor if they are willing to do it. There are no formal rules on how
+much/little your supervisor may help with your thesis, but ask them in good time, and they will most likely be happy to
+help you.

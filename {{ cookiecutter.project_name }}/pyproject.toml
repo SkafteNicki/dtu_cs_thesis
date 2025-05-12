@@ -11,15 +11,5 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
 ]
 dependencies = [
-  "cookiecutter>=2.6",
-  "mkdocs-glightbox>=0.4",
-  "mkdocs-material>=9.6.5",
-  "plotly>=6.0.1",
-  "typer>=0.15.2",
-]
-
-[dependency-groups]
-dev = [
-    "invoke>=2.2.0",
-    "pre-commit>=4.1.0",
+  "rich>=14",
 ]

@@ -46,7 +46,7 @@ understanding the theoretical limits of the model you are using.
 Regardless of how you find a project, you need a supervisor from DTU to register the project and guide you through the
 project (yes, also for company projects). The DTU rules state that:
 
-!!! note " "
+!!! note "Main supervisor"
 
     The main supervisor for a master's thesis must
 
@@ -80,7 +80,7 @@ differ a bit from studyline to studyline, so make sure you read the rules for yo
 Especially, be aware of learning objectives for your thesis, as they are the basis for the assessment of your thesis.
 They will look something like this:
 
-!!! note " "
+!!! note "Learning objectives"
 
     A graduate of the MSc programme from DTU:
 
@@ -107,7 +107,7 @@ The project needs to be officially registered by your supervisor to DTU study ad
 be done about two weeks before you start the work. For your supervisor to register the project they need some
 [information](include/DTUs_projektindberetning.pdf).
 
-!!! note " "
+!!! note "Registration information"
 
     * **Title**: The overall title for the project
 

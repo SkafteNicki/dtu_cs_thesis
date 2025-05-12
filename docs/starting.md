@@ -15,6 +15,73 @@ and you should not be worried about it. In general expect to
 
 When you are closing in on the first month you need to hand-in a project plan.
 
+!!! note "Thesis template"
+
+    If you want a barebone thesis template to get started with I have created one that is included in this repository.
+    It is a [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) template that you can use to create a new
+    thesis project by running the following command in your terminal:
+
+    ```bash
+    pip install cookiecutter
+    cookiecutter https://github.com/SkafteNicki/dtu_cs_thesis
+    ```
+
+    and answer the questions in the terminal. It contains a basic structure for the thesis, your project plan and
+    general code structure. For full reproducibility, it also contains a
+    [devcontainer](https://code.visualstudio.com/docs/devcontainers/create-dev-container) setup that will automatically
+    install all the dependencies needed to run code and write the thesis.
+
+    ??? example "Template structure"
+
+        ```bash
+        project_name/
+        ├── .devcontainer
+        │   ├── devcontainer.json
+        │   └── post_create.sh
+        ├── .gitignore
+        ├── LICENSE
+        ├── notebooks
+        │   └── .gitkeep
+        ├── .pre-commit-config.yaml
+        ├── project_plan
+        │   ├── bibliography.bib
+        │   ├── main.pdf
+        │   ├── main.tex
+        │   ├── time_plan.ods
+        │   └── time_plan.png
+        ├── pyproject.toml
+        ├── README.md
+        ├── scripts
+        │   └── .gitkeep
+        ├── src
+        │   └── .gitkeep
+        ├── thesis
+        │   ├── backmatter
+        │   │   ├── appendix.tex
+        │   │   └── backpage.tex
+        │   ├── bibliography.bib
+        │   ├── chapters
+        │   │   └── 01_introduction.tex
+        │   ├── frontmatter
+        │   │   ├── abstract.tex
+        │   │   ├── acknowledgements.tex
+        │   │   ├── approval.tex
+        │   │   ├── copyright.tex
+        │   │   └── frontpage.tex
+        │   ├── main.pdf
+        │   ├── main.tex
+        │   ├── pictures
+        │   │   ├── dtured_rgb.pdf
+        │   │   └── DTU_stock_photo.jpg
+        │   ├── readme.md
+        │   └── setup
+        │       ├── info.tex
+        │       ├── preamble.tex
+        │       └── settings.tex
+        └── uv.lock
+        ```
+
+
 ## 🗓️ The project plan
 
 You have two hand-ins during your thesis: a project plan precisely 1 month after starting the project and your thesis.

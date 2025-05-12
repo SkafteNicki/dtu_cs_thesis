@@ -1,0 +1,43 @@
+\documentclass[a4paper,twoside,11pt]{report} %openright
+\input{setup/info.tex}
+\input{setup/preamble.tex}
+\input{setup/settings.tex}
+
+\begin{document}
+
+\pagenumbering{roman}
+\input{frontmatter/frontpage.tex}
+\pagecolor{white}
+\newgeometry{top=2.81cm, bottom=2.75cm, outer=2.5cm, inner=3.5cm}
+\pagestyle{empty}
+\cleardoublepage
+\input{frontmatter/copyright.tex}
+\clearpage
+\pagestyle{main}
+\input{frontmatter/approval.tex}
+\clearpage
+\input{frontmatter/abstract.tex}
+\clearpage
+\input{frontmatter/acknowledgements.tex}
+\cleardoublepage
+\tableofcontents
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagenumbering{arabic}
+\input{chapters/01_introduction.tex}
+%\cleardoublepage
+%\input{Chapters/02_.tex}
+%\cleardoublepage
+%\input{Chapters/03_.tex}
+%\cleardoublepage
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\nocite{*}
+\printbibliography[heading=bibintoc,title={Bibliography}]
+\cleardoublepage
+\appendix
+\input{backmatter/appendix.tex}
+\cleartoleftpage
+\input{backmatter/backpage.tex}
+
+\end{document}
