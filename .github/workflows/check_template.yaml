@@ -38,6 +38,7 @@ jobs:
             latex
             latex-bin
             latexmk
+            biber
             xetex
             fontspec
             graphics
