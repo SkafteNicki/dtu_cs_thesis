@@ -40,6 +40,7 @@ When you are closing in on the first month you need to hand-in a project plan.
         ├── LICENSE
         ├── notebooks
         │   └── .gitkeep
+        ├── .pre-commit-config.yaml
         ├── project_plan
         │   ├── bibliography.bib
         │   ├── main.pdf
@@ -52,37 +53,30 @@ When you are closing in on the first month you need to hand-in a project plan.
         │   └── .gitkeep
         ├── src
         │   └── .gitkeep
-        └── thesis
-            ├── Backmatter
-            │   ├── Appendix.tex
-            │   └── Backpage.tex
-            ├── bibliography.bib
-            ├── Chapters
-            │   ├── 01_Introduction.tex
-            │   ├── 02_Colours.tex
-            │   └── 03_Examples.tex
-            ├── Frontmatter
-            │   ├── Abstract.tex
-            │   ├── Acknowledgements.tex
-            │   ├── Approval.tex
-            │   ├── Copyright.tex
-            │   └── Frontpage.tex
-            ├── main.pdf
-            ├── main.tex
-            ├── Pictures
-            │   ├── DTU_stock_photo.jpg
-            │   └── Logos
-            │       ├── black_cmyk.pdf
-            │       ├── black_rgb.pdf
-            │       ├── dtured_cmyk.pdf
-            │       ├── dtured_rgb.pdf
-            │       ├── white_cmyk.pdf
-            │       └── white_rgb.pdf
-            ├── readme.md
-            └── Setup
-                ├── Preamble.tex
-                ├── Settings.tex
-                └── Statics.tex
+        ├── thesis
+        │   ├── backmatter
+        │   │   ├── appendix.tex
+        │   │   └── backpage.tex
+        │   ├── bibliography.bib
+        │   ├── chapters
+        │   │   └── 01_introduction.tex
+        │   ├── frontmatter
+        │   │   ├── abstract.tex
+        │   │   ├── acknowledgements.tex
+        │   │   ├── approval.tex
+        │   │   ├── copyright.tex
+        │   │   └── frontpage.tex
+        │   ├── main.pdf
+        │   ├── main.tex
+        │   ├── pictures
+        │   │   ├── dtured_rgb.pdf
+        │   │   └── DTU_stock_photo.jpg
+        │   ├── readme.md
+        │   └── setup
+        │       ├── info.tex
+        │       ├── preamble.tex
+        │       └── settings.tex
+        └── uv.lock
         ```
 
 
