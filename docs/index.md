@@ -6,6 +6,7 @@ you through the three phases of doing a thesis at DTU Compute:
 1. Preparation before starting the thesis,
 2. Doing the actual thesis and
 3. Finally writing and defending the thesis.
+
 Each phase has its own challenges and this document is intended to help you through them.
 
 Why does this documentation exist? Well, I have been supervising students writing their thesis at DTU Compute for a
@@ -18,4 +19,4 @@ For suggestions, corrections or comments, please create an issue on the
 
 I hope you have a wonderful time writing your thesis!
 
-Nicki, Associate Professor at DTU Compute
+[Nicki](https://skaftenicki.github.io/), Associate Professor at DTU Compute
