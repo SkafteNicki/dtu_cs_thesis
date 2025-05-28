@@ -125,6 +125,11 @@ thesis. The most up-to-date guidelines regarding DTU rules regarding the use of 
 
 # 🧩 Miscellaneous
 
+* You should in the introduction have one or more research questions that you try to answer in your thesis. It is
+    important that you therefore in the conclusion answer these research questions clearly. It will tie the whole
+    thesis together. If you have multiple research questions, consider numbering them, e.g. RQ1, RQ2, etc. for easy
+    reference.
+
 * When referring to a figure, table, appendix, section, etc. always capitalize the first letter and preferably use the
     abbreviation. For example, "Figure 1" instead of "figure 1" or "Fig. 1". This is a common practice in academic
     writing. More examples:
