@@ -2,7 +2,7 @@ import plotly.graph_objects as go
 from pathlib import Path
 from typer import Typer
 
-app = Typer()
+app = Typer(no_args_is_help=True, help="Generate figures for documentation.")
 
 
 @app.command()
@@ -92,12 +92,9 @@ def quadrants():
     )
 
     # Export the figure to a PNG file
-    output_path = Path(__file__).parent.absolute() / "figures/quadrants.png"
+    output_path = Path("docs/figures/quadrants.png")
     output_path.parent.mkdir(parents=True, exist_ok=True)  # Ensure directory exists
     fig.write_image(output_path)
-
-    # Show the figure in interactive mode (optional)
-    fig.show()
 
 
 @app.command()
@@ -138,11 +135,9 @@ def grade_distribution():
         margin=dict(t=80),
     )
 
-    output_path = Path(__file__).parent.absolute() / "figures/grade_distribution.png"
+    output_path = Path("docs/figures/grade_distribution.png")
     output_path.parent.mkdir(parents=True, exist_ok=True)  # Ensure directory exists
     fig.write_image(output_path)
-
-    fig.show()
 
 
 if __name__ == "__main__":

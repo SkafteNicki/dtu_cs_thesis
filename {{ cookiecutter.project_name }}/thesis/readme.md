@@ -1,5 +1,5 @@
 # How do I change the information in the template?
-Setup/Statics.tex
+setup/settings.py
 
 # Where can I suggest changes?
 latex-support@student.dtu.dk

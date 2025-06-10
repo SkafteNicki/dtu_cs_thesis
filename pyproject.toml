@@ -12,6 +12,7 @@ classifiers = [
 ]
 dependencies = [
   "cookiecutter>=2.6",
+  "kaleido>=1.0.0rc15",
   "mkdocs-glightbox>=0.4",
   "mkdocs-material>=9.6.5",
   "plotly>=6.0.1",
