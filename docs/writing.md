@@ -159,6 +159,28 @@ thesis. The most up-to-date guidelines regarding DTU rules regarding the use of 
 
     Preferably, make sure the references are sorted in the list by number.
 
+* When creating table with multiple columns indicating some kind of performance, always be clear about the direction
+    of the performance. For example, accuracy is better when it is higher, while mean squared error (MSE) is better
+    when it is lower. If you have a mix of performance metrics, consider adding ↑ and ↓ to the column names to
+    indicate the direction of the performance. For example:
+
+    ```latex
+    \begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Model} & \textbf{Accuracy (\uparrow)} & \textbf{MSE (\downarrow)} \\
+    \hline
+    Model A & 0.95 & 0.01 \\
+    Model B & 0.90 & 0.02 \\
+    Model C & 0.85 & 0.03 \\
+    \hline
+    \end{tabular}
+    \caption{Performance of different models}
+    \label{tab:model_performance}
+    \end{table}
+    ```
+
 # 🔍 Supervisor Review
 
 If you want feedback on your thesis, ask your supervisor if they are willing to do it. There are no formal rules on how
