@@ -847,6 +847,27 @@ thesis. The most up-to-date guidelines regarding DTU rules regarding the use of 
 </span></code></pre></div>
 <p>Preferably, make sure the references are sorted in the list by number.</p>
 </li>
+<li>
+<p>When creating table with multiple columns indicating some kind of performance, always be clear about the direction
+    of the performance. For example, accuracy is better when it is higher, while mean squared error (MSE) is better
+    when it is lower. If you have a mix of performance metrics, consider adding ↑ and ↓ to the column names to
+    indicate the direction of the performance. For example:</p>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[ht]
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">\centering</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|l|c|c|<span class="nb">}</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">\hline</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="k">\textbf</span><span class="nb">{</span>Model<span class="nb">}</span> <span class="nb">&amp;</span> <span class="k">\textbf</span><span class="nb">{</span>Accuracy (<span class="k">\uparrow</span>)<span class="nb">}</span> <span class="nb">&amp;</span> <span class="k">\textbf</span><span class="nb">{</span>MSE (<span class="k">\downarrow</span>)<span class="nb">}</span> <span class="k">\\</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">\hline</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Model A <span class="nb">&amp;</span> 0.95 <span class="nb">&amp;</span> 0.01 <span class="k">\\</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>Model B <span class="nb">&amp;</span> 0.90 <span class="nb">&amp;</span> 0.02 <span class="k">\\</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>Model C <span class="nb">&amp;</span> 0.85 <span class="nb">&amp;</span> 0.03 <span class="k">\\</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">\hline</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="k">\caption</span><span class="nb">{</span>Performance of different models<span class="nb">}</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">\label</span><span class="nb">{</span>tab:model<span class="nb">_</span>performance<span class="nb">}</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</span></code></pre></div>
+</li>
 </ul>
 <h1 id="supervisor-review">🔍 Supervisor Review</h1>
 <p>If you want feedback on your thesis, ask your supervisor if they are willing to do it. There are no formal rules on how
