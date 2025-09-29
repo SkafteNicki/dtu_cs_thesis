@@ -100,7 +100,7 @@ def quadrants():
 @app.command()
 def grade_distribution():
     grade = [-3, 0, 2, 4, 7, 10, 12]
-    count = [0, 1, 1, 1, 4, 16, 28]
+    count = [0, 1, 2, 2, 4, 16, 31]
 
     # Calculate total count and percentages
     total_count = sum(count)
