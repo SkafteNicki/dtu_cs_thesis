@@ -20,3 +20,9 @@ def clean(ctx: Context):
 def template(ctx: Context):
     """Generate a new project from template."""
     ctx.run("uv run cookiecutter . -f --no-input --verbose", **common_options)
+
+
+@task()
+def docs(ctx: Context, live: bool = True):
+    """Build the documentation."""
+    ctx.run(f"mkdocs {'serve' if live else 'build'}", **common_options)

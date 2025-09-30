@@ -12,7 +12,12 @@ Each phase has its own challenges and this document is intended to help you thro
 Why does this documentation exist? Well, I have been supervising students writing their thesis at DTU Compute for a
 couple of years now, and I have noticed that many students have the same questions and problems. This document is
 intended to help you avoid some of the common pitfalls and answer some of the common questions. It is both incomplete
-and opinionated, so please ask your supervisor for their opinion on the matter.
+and opinionated, so please ask your supervisor for their opinion on the matter. Part of the documentation is based on
+my colleagues writing on the same topic
+[[1](https://people.compute.dtu.dk/ndra/NickDk/Thesis.html),
+[2](https://people.compute.dtu.dk/pgba/supervision/),
+[3](https://people.compute.dtu.dk/janba/thesis_checklist.pdf),
+[4](https://www.bardram.net/msc-thesis/)].
 
 For suggestions, corrections or comments, please create an issue on the
 [GitHub repository](https://github.com/SkafteNicki/dtu_cs_thesis) and I get back to you as soon as possible.

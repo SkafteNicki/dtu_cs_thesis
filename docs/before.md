@@ -69,6 +69,148 @@ If you are doing a company project, you will also need a co-supervisor from the 
 officially hold any responsibilities, but they are very much expected to help you with the practicalities of the project
 and provide you with the necessary data and information.
 
+You can in general find supervisors by looking at the page belonging to one of the 10 sections belonging to DTU Compute:
+
+| Section                      | Focus                                                                 | Link                                            |
+|------------------------------|-----------------------------------------------------------------------|-------------------------------------------------|
+| Algorithms, Logic and Graphs | Algorithms, logic, graph theory, and discrete mathematics             | <https://www.compute.dtu.dk/sections/algolog>   |
+| Cognitive Systems            | Human–machine interaction, signal processing, machine learning        | <https://www.compute.dtu.dk/sections/cogsys>    |
+| Cybersecurity Engineering    | Secure systems, cryptography, networks, and cyber-physical security   | <https://www.compute.dtu.dk/sections/cybsec>    |
+| Dynamical Systems            | Modeling, forecasting, optimization, and control of dynamic systems   | <https://www.compute.dtu.dk/sections/dynsys>    |
+| Embedded Systems Engineering | Hardware–software co-design, edge/cloud systems, dependable computing | <https://www.compute.dtu.dk/sections/emsys>     |
+| Mathematics                  | Pure and applied mathematics, algebra, analysis, geometry             | <https://www.compute.dtu.dk/sections/math>      |
+| Scientific Computing         | Numerical algorithms, modeling, simulation, and high-performance comp.| <https://www.compute.dtu.dk/sections/scicom>    |
+| Software Systems Engineering | Software engineering, programming languages, formal methods           | <https://www.compute.dtu.dk/sections/sofsys>    |
+| Statistics and Data Analysis | Statistics, bioinformatics, data analysis, pattern recognition        | <https://www.compute.dtu.dk/sections/stat>      |
+| Visual Computing             | Image analysis, computer vision, graphics, 3D modeling                | <https://www.compute.dtu.dk/sections/viscom>    |
+
+<figure markdown="span">
+  ![scope](figures/dtu_compute_sections.png){ width="700" }
+  <figcaption> The ten sections of DTU Compute + Research & Collaborations. From https://www.compute.dtu.dk </figcaption>
+</figure>
+
+
+### 🤝 How to approach a potential supervisor
+
+Researchers are busy people and in many cases they already have too many students to supervise. Therefore, it is
+important that you approach potential supervisors in the right way. When contacting a potential supervisor, always
+do it from your *DTU student email address*, else you risk being send to the shadow realm (spam folder). Feel free to
+include a CV and or academic transcript, it is not required, but it some supervisors will ask for it.
+
+Here are some common scenarios you might find yourself in when contacting a potential supervisor.
+
+??? example "Case 0: How **NOT** to approach a supervisor"
+
+    > Hi, my name is X, I study Y and I am looking for a thesis project. Do you have any projects available?
+
+    This kind of email is very likely to be ignored. Many students are searching for thesis projects, and unless the
+    researcher has a current list of available projects posted online, you probably won’t get a response. Don’t take it
+    personally—researchers receive a huge number of these emails and simply don’t have time to answer them all. In fact,
+    replying often means starting a longer conversation, which can be even more time-consuming.
+
+??? example "Case 1: You have a project idea"
+
+    > Dear Professor Z,
+    >
+    > My name is X, and I am a Y student at DTU. I have a strong interest in [specific area of research], and I recently
+    > came up with an idea for a thesis project that I believe aligns well with your expertise in [related field]. The
+    > project involves [brief description of the project idea].
+    >
+    > I would greatly appreciate the opportunity to discuss this idea with you further and explore the possibility of
+    > you supervising my thesis. I am eager to contribute to your research group and learn from your experience.
+    >
+    > Thank you for considering my request. I look forward to hearing from you.
+    >
+    > Best regards,
+    > X
+
+    Check the research pages of relevant departments or research groups, as well as the individual pages of academic
+    staff members (starting with lead researchers or professors). The goal is to identify one or more potential
+    supervisors who work in your area of interest or a related research field. You can then contact these potential
+    supervisors by email. The email should include:
+
+    1. A brief introduction about yourself and your academic background
+    2. A list of courses you have completed, along with your grades
+    3. A 1-2 page description of your project idea: including the problem statement, its relevance, your proposed
+        approach, and what makes your idea novel
+
+    Providing this information helps the potential supervisor understand both you and your project, and serves as a
+    solid foundation for further discussion.
+
+??? example "Case 2: You have a project idea in collaboration with a company"
+
+    > Dear Professor Z,
+    >
+    > My name is X, and I am a Y student at DTU. I have a strong interest in [specific area of research], and I am
+    > currently working with [Company Name] on a project that I believe aligns well with your expertise in
+    > [related field]. The project involves [brief description of the project idea].
+    >
+    > I would greatly appreciate the opportunity to discuss this idea with you further and explore the possibility of
+    > you supervising my thesis. I am eager to contribute to your research group and learn from your experience.
+    >
+    > Thank you for considering my request. I look forward to hearing from you.
+    >
+    > Best regards,
+    > X
+
+    Check the research pages of relevant departments or research groups, as well as the individual pages of academic
+    staff members (starting with lead researchers or professors) to find someone who does research or has expertise
+    related to your project. You can then contact potential supervisors by email. The email should include:
+
+    1. A brief introduction about yourself and your academic background
+    2. A list of courses you have completed, along with your grades
+    3. A 1-2 page description of the project (including the problem statement, why the problem is relevant, your
+        proposed approach, and what makes your idea novel), as well as details about the company and the name of your
+        company supervisor(s)
+
+    Keep in mind that a project in collaboration with a company may require more time to define and officially register,
+    as an agreement must be reached to meet both DTU's and the company's expectations.
+
+??? example "Case 3: You don't have any project idea but you have a subject you like"
+
+    > Dear Professor Z,
+    >
+    > My name is X, and I am a Y student at DTU. I have a strong interest in [specific area of research] and would like
+    > to explore potential thesis projects in this field. I am eager to contribute to your research group and learn
+    > from your experience.
+    >
+    > I would greatly appreciate the opportunity to discuss possible project ideas with you and explore the possibility
+    > of you supervising my thesis.
+    >
+    > Thank you for considering my request. I look forward to hearing from you.
+    >
+    > Best regards,
+    > X
+
+    When searching for a supervisor, check the research pages of relevant departments or research groups, as well as the
+    individual pages of academic staff members (starting with lead researchers or professors) to find someone who works
+    in your area of interest. For example, if you are interested in a subject covered in a particular course, it makes
+    sense to start by contacting the teacher(s) of that course. You can then contact potential supervisors by email. The
+    email should include:
+
+    1. A brief introduction about yourself and your academic background
+    2. A list of courses you have completed, along with your grades
+    3. A short description of the subject you are interested in
+    4. The type of thesis project you would ideally prefer (theoretical, practical, or a combination)
+
+    Providing this information helps the potential supervisor understand your interests and background, and serves as a
+    good starting point for further discussion.
+
+??? example "Case 4: You don't have any project idea, but you have a subject you like"
+    > Dear Professor Z,
+    >
+    > My name is X, and I am a Y student at DTU. I recently completed your course [Course Name], which I found particularly exciting and in which I performed well. I am very interested in [specific area of research related to the course] and would like to explore potential thesis projects in this field.
+    >
+    > I would greatly appreciate the opportunity to discuss possible project ideas with you and explore the possibility of you supervising my thesis.
+    >
+    > Thank you for considering my request. I look forward to hearing from you.
+    >
+    > Best regards,
+    > X
+
+    If you are unsure whom to contact, consider reaching out to the teacher of a course you found most exciting or performed well in. Alternatively, you can contact your head of studies or the study coordinator for your program, as they may have suggestions for potential supervisors.
+
+
 ## 👓 Read the rules
 
 Yes, it is super boring to read the rules, but it is important to know what you are getting into and you can often
@@ -84,18 +226,25 @@ They will look something like this:
 
     A graduate of the MSc programme from DTU:
 
-    * can identify and reflect on technical scientific issues and understand the interaction between the various
+    1️ can identify and reflect on technical scientific issues and understand the interaction between the various
         components that make up an issue
-    * can, based on a clear academic profile, apply elements of current research at an international level to develop
+
+    2️ can, based on a clear academic profile, apply elements of current research at an international level to develop
         ideas and solve problems
-    * masters technical scientific methodologies, theories, and tools, and can take a holistic view of and delimit a
+
+    3️ masters technical scientific methodologies, theories, and tools, and can take a holistic view of and delimit a
         complex, open issue, put it into a broader academic and societal perspective, and, on this basis, propose a
         variety of * possible actions while considering sustainability
-    * can develop relevant models, systems, technologies, and processes aimed at solving technological problems
-    * can communicate and mediate research-based knowledge both orally and in writing
-    * is familiar with and can seek out leading international research within their specialist area.
-    * can work independently and reflect on own learning, academic development, and specialization
-    * masters technical problem-solving at a high level through cross-disciplinary teamwork, and can work with and
+
+    4️ can develop relevant models, systems, technologies, and processes aimed at solving technological problems
+
+    5️ can communicate and mediate research-based knowledge both orally and in writing
+
+    6️ is familiar with and can seek out leading international research within their specialist area.
+
+    7️ can work independently and reflect on own learning, academic development, and specialization
+
+    8️ masters technical problem-solving at a high level through cross-disciplinary teamwork, and can work with and
         manage all phases of a project – including preparation of timetables, design, solution, and documentation
 
 All these learning objectives are fairly *meta*, but they can interpret as you need to master every aspect of doing

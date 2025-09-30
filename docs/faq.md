@@ -16,3 +16,8 @@ the same - a thesis that is rushed, incomplete, or lacking the necessary depth.
 Yes, no problem. However, I would recommend talking with your employer about the last 2-3 weeks of your thesis and
 either getting time off or reduced hours (if you economically can). The last weeks of your thesis is often the most
 stressful, and you will need all the time you can get.
+
+## How long does the thesis take?
+
+The project period is 5 months (30 ECTS) or 5.5 months (32.5 ECTS) or 6 months (35 ECTS) of full-time work. You get an
+additional 3 weeks extra for every 5 additional ECTS credits from course activities.
