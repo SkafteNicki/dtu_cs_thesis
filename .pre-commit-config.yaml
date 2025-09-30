@@ -56,4 +56,4 @@ repos:
         name: Check figures updated
         entry: uv run scripts/check_figures_updated.py
         language: system
-        files: scripts/check_figures_updated.py
+        files: scripts/figures.py
