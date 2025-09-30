@@ -3,6 +3,16 @@ practices that you should follow. For example, since you are a computer science 
 write your thesis in LaTex. A good starting template for your thesis is this
 [DTU thesis template](https://www.overleaf.com/latex/templates/dtu-thesis-template/dyxwwkhmzrbx).
 
+The most important advice I can give in terms of writing your thesis: START IN GOOD TIME! Yes, it is possible to write
+the thesis in the last couple of weeks before the deadline, but having the time to reflect on your writing is
+invaluable. *Accept* that writing is a process that takes time and sometimes is means that you have less time for
+coding/experimenting.
+
+<figure markdown="span">
+  ![scope](figures/student_writing.png){ width="700" }
+  <figcaption> Better start early on the writing process! </figcaption>
+</figure>
+
 ## 🏗️ Structure
 
 Your thesis should follow common academic structure overall which includes but not limited to:

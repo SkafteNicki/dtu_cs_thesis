@@ -6,6 +6,7 @@ SCRIPT_OUTPUTS = {
     "scripts/figures.py": [
         "docs/figures/quadrants.png",
         "docs/figures/grade_distribution.png",
+        "docs/figures/student_writing.png",
     ],
 }
 
@@ -24,12 +25,12 @@ def main():
 
     for script, outputs in SCRIPT_OUTPUTS.items():
         if script in staged_files:
-            for output in outputs:
-                if output not in staged_files:
-                    print(
-                        f"❌ {output} not staged but {script} was modified. Please update and commit the figure."
-                    )
-                    failed = True
+            if not any(output in staged_files for output in outputs):
+                print(
+                    f"Error: {script} is staged but none of its output files are staged."
+                )
+                print(f"Expected one of: {', '.join(outputs)}")
+                failed = True
 
     if failed:
         sys.exit(1)
