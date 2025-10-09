@@ -81,6 +81,57 @@ When you are closing in on the first month you need to hand-in a project plan.
         └── uv.lock
         ```
 
+## 📚 Literature searching tips
+
+As part of your thesis you need to read relevant literature. This is a crucial part of the scientific process, and you
+should be able to find and understand the key papers related to your project. If you have a good strategy for searching
+for literature, stick to it. Else, here are some tips for finding relevant literature:
+
+* I really like to use [https://consensus.app/](https://consensus.app/) which is an AI-powered search engine for
+    scientific papers. Because you can fuzzy-search for topics it is excellent for getting an overview of a new topic.
+    It does not cover all scientific papers, but it is a good starting point.
+
+* Use Google Scholar <https://scholar.google.com> to search for scientific papers. Especially, if you have already
+    found a paper of interest, using the "Cited by" feature allows you to find more recent papers that have cited
+    a paper you find interesting.
+
+* Use the university library's search engine <https://www.dtu.dk/english/service-and-support/library>. This will allow
+    you to access papers that are behind some paywalls (because DTU has a subscription to many journals).
+
+* [https://www.connectedpapers.com/](https://www.connectedpapers.com/) is a great tool for finding related papers to a
+    paper you find interesting. It creates a graph of related papers that can help you find more literature.
+
+Try to find at least 3-5 papers that will serve as the main foundation for your thesis. Read these papers
+thoroughly and try to understand the methods they use and the results they obtain. Additionally, you should find 10+
+other papers that are relevant to your thesis. You do not need to read these papers in detail, but you should
+be familiar with their content.
+
+You should aim to have at least 30 references in your thesis (1). Again, most should be scientific papers preferably
+from journals or conferences e.g.
+[peer-reviewed papers](https://www.sciencedirect.com/science/article/pii/S2666668521000070). However, everything
+really goes as long as you are critical about your sources. This could be blog posts, technical documentation, videos,
+non-peer-reviewed preprints, Wikipedia, books etc. But please do not use sources from any kind of generative AI response
+as they are known to
+[hallucinate references](https://www.tandfonline.com/doi/full/10.1080/0361526X.2024.2433640#abstract).
+{ .annotate }
+
+1. :man_raising_hand: Yes, this is an arbitrary number, and it is not a hard requirement. Fight me.
+
+If you want to be even more systematic about your literature search (not required in any way), I would recommend
+following the strategy laid out in this [paper](https://www.sciencedirect.com/science/article/pii/S2215016122002746),
+where you first plan your search  strategy by defining your search terms, inclusion and exclusion criteria etc. Then you
+perform the search and finally selects and refine the papers you have found, see figure below.
+
+<figure markdown="span">
+![scientific_method](figures/literature_strategy.jpg){ width="300" }
+<figcaption>
+From Carrera-Rivera et al. (2022) How-to conduct a systematic literature review: A quick guide for computer science
+research, MethodsX
+</figcaption>
+</figure>
+
+See this [thesis](https://findit.dtu.dk/en/catalog/640148e491aff93c12cdefb4) which implements the strategy in during
+their literature search.
 
 ## 🗓️ The project plan
 
