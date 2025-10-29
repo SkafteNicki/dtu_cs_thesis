@@ -1,4 +1,4 @@
-# Doing a master thesis at DTU Compute
+# Doing a thesis at DTU Compute
 
 First off, congratulations on reaching the point where you are writing your thesis! This document is intended to help
 you through the three phases of doing a thesis at DTU Compute:
@@ -25,3 +25,19 @@ For suggestions, corrections or comments, please create an issue on the
 I hope you have a wonderful time writing your thesis!
 
 [Nicki](https://skaftenicki.github.io/), Associate Professor at DTU Compute
+
+---
+If you want to do projects together with me, you can find current project ideas
+[here](https://www.notion.so/Project-descriptions-short-276da74063d08060b203f83630b3c3e4).
+
+If you want to cite this document, please use the following BibTeX entry:
+
+```bibtex
+@misc{SkafteNicki_Thesis_Guide_2024,
+    author       = {Nicki Skafte},
+    title        = {Doing a thesis at DTU Compute},
+    year         = {2025},
+    howpublished = {\url{https://skaftenicki.github.io/dtu_cs_thesis/}},
+    note         = {Accessed: year-month-day}
+}
+```

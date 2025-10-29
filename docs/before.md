@@ -48,7 +48,7 @@ project (yes, also for company projects). The DTU rules state that:
 
 !!! note "Main supervisor"
 
-    The main supervisor for a master's thesis must
+    The main supervisor for a thesis must:
 
     * Be an employee at DTU as a VIP with research obligations and one of the following job categories: assistant
         professor, associate professor, researcher, senior researcher, senior adviser, or professor,
