@@ -76,7 +76,7 @@ jobs:
           fi
 
       - name: Upload project plan
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: project_plan
           path: project_name/project_plan/main.pdf
@@ -95,7 +95,7 @@ jobs:
           fi
 
       - name: Upload thesis
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: thesis
           path: project_name/thesis/main.pdf
