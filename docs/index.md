@@ -7,7 +7,9 @@ you through the three phases of doing a thesis at DTU Compute:
 2. Doing the actual thesis and
 3. Finally writing and defending the thesis.
 
-Each phase has its own challenges and this document is intended to help you through them.
+Each phase has its own challenges and this document is intended to help you through them. The document is written
+for both bachelor (BSc) and master (MSc) projects, and the word *thesis* is used for both. Where the rules
+differ between the two, this is pointed out.
 
 Why does this documentation exist? Well, I have been supervising students writing their thesis at DTU Compute for a
 couple of years now, and I have noticed that many students have the same questions and problems. This document is

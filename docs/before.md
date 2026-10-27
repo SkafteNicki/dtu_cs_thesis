@@ -8,7 +8,7 @@ The first step in writing a thesis is to find a project to work on. The four mos
 4. Contact a professor or researcher at DTU for project ideas
 
 Regardless of what way you find a project, it is important that you find a project that you are interested in! You will
-be working on the project for 5+ months and burnout is a real thing. So, even if you are not in charge of formulating
+be working on the project for several months and burnout is a real thing. So, even if you are not in charge of formulating
 the initial project idea, you can still influence the project during the process to make it more interesting for you.
 Remember, in the end it is your thesis 🎓
 
@@ -222,30 +222,53 @@ differ a bit from studyline to studyline, so make sure you read the rules for yo
 Especially, be aware of learning objectives for your thesis, as they are the basis for the assessment of your thesis.
 They will look something like this:
 
-!!! note "Learning objectives"
+=== "Master thesis (MSc)"
 
-    A graduate of the MSc programme from DTU:
+    !!! note "Learning objectives"
 
-    1️ can identify and reflect on technical scientific issues and understand the interaction between the various
-        components that make up an issue
+        A graduate of the MSc programme from DTU:
 
-    2️ can, based on a clear academic profile, apply elements of current research at an international level to develop
-        ideas and solve problems
+        1️ can identify and reflect on technical scientific issues and understand the interaction between the various
+            components that make up an issue
 
-    3️ masters technical scientific methodologies, theories, and tools, and can take a holistic view of and delimit a
-        complex, open issue, put it into a broader academic and societal perspective, and, on this basis, propose a
-        variety of * possible actions while considering sustainability
+        2️ can, based on a clear academic profile, apply elements of current research at an international level to develop
+            ideas and solve problems
 
-    4️ can develop relevant models, systems, technologies, and processes aimed at solving technological problems
+        3️ masters technical scientific methodologies, theories, and tools, and can take a holistic view of and delimit a
+            complex, open issue, put it into a broader academic and societal perspective, and, on this basis, propose a
+            variety of * possible actions while considering sustainability
 
-    5️ can communicate and mediate research-based knowledge both orally and in writing
+        4️ can develop relevant models, systems, technologies, and processes aimed at solving technological problems
 
-    6️ is familiar with and can seek out leading international research within their specialist area.
+        5️ can communicate and mediate research-based knowledge both orally and in writing
 
-    7️ can work independently and reflect on own learning, academic development, and specialization
+        6️ is familiar with and can seek out leading international research within their specialist area.
 
-    8️ masters technical problem-solving at a high level through cross-disciplinary teamwork, and can work with and
-        manage all phases of a project – including preparation of timetables, design, solution, and documentation
+        7️ can work independently and reflect on own learning, academic development, and specialization
+
+        8️ masters technical problem-solving at a high level through cross-disciplinary teamwork, and can work with and
+            manage all phases of a project – including preparation of timetables, design, solution, and documentation
+
+=== "Bachelor thesis (BSc)"
+
+    !!! note "Learning objectives"
+
+        The BSc project from DTU must demonstrate that you:
+
+        1️ can work independently and is able to structure a major project, including meeting deadlines and organizing
+            and planning the project work
+
+        2️ can summarize and interpret technical information and is fully familiar with technical problem solving
+            through project work
+
+        3️ is able to work with all project phases, including the preparation of proposals, solutions, and
+            documentation
+
+        4️ is able to independently acquire new knowledge and adopt a critical approach to the acquired knowledge and
+            carry out relevant and critical information searches, and on this basis find the right methods to shed
+            light on the problem in question
+
+        5️ is able to communicate technical information, theory, and results in written, visual/graphic, and oral form
 
 All these learning objectives are fairly *meta*, but they can interpret as you need to master every aspect of doing
 a thesis from the technical aspects to the communication and project management.
@@ -264,7 +287,8 @@ be done about two weeks before you start the work. For your supervisor to regist
         of the work to be done. You do not fix the project description in stone, but it is a good idea to have a clear
         idea of what you want to do.
 
-    * **Number of ECTS**: You can do the thesis for 30, 32.5 or 35 ECTS. The default is 30 ECTS.
+    * **Number of ECTS**: A master thesis can be 30, 32.5 or 35 ECTS (the default is 30 ECTS). A bachelor thesis can be
+        15, 17.5 or 20 ECTS.
 
     * **Start date**: The date you start working on the project. If you start in the spring, you are expected to start
         either in the first week of january or if you are having a 3 weeks course, then the first week after 3 weeks
