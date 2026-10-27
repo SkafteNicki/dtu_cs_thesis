@@ -1,15 +1,31 @@
 name: Build & check docs
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
-    branches:
-      - main
+    branches: [main]
+    types: [opened, synchronize, reopened, closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Serialize preview deploys for the same PR. Pushes from different PRs (and
+# from deploy_docs.yaml) can still land concurrently, so every push below is
+# retried against the latest gh-pages tip instead of failing the check.
+concurrency:
+  group: docs-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+env:
+  PREVIEW_BASE_URL: https://skaftenicki.github.io/dtu_cs_thesis
+  # Previews are plain static files under this folder on gh-pages and are only
+  # reachable via the PR comment link. deploy_docs.yaml preserves this folder.
+  PREVIEW_DIR: previews/pr-${{ github.event.pull_request.number }}
 
 jobs:
   deploy:
+    name: Build & preview docs
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -24,5 +40,131 @@ jobs:
       - name: Install the project
         run: uv sync --all-extras --dev
 
-      - name: Build and publish docs
-        run: uv run mkdocs build --strict
+      - name: Build docs (strict)
+        run: uv run mkdocs build -d build --strict
+
+      - name: Upload docs
+        uses: actions/upload-artifact@v4
+        with:
+          name: docs
+          path: build
+
+      - name: Configure git credentials
+        if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Deploy PR preview
+        if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
+        run: |
+          push_with_retry() {
+            local attempt=1
+            while true; do
+              if git push origin gh-pages; then
+                return 0
+              fi
+              if [ "$attempt" -ge 5 ]; then
+                return 1
+              fi
+              echo "::warning::gh-pages moved during the push (attempt ${attempt}/5); rebasing and retrying"
+              git fetch origin gh-pages
+              git rebase origin/gh-pages || {
+                git rebase --abort
+                return 1
+              }
+              sleep $((attempt * 5))
+              attempt=$((attempt + 1))
+            done
+          }
+
+          git fetch origin gh-pages
+          git checkout gh-pages
+          rm -rf "$PREVIEW_DIR"
+          mkdir -p "$PREVIEW_DIR"
+          cp -r build/. "$PREVIEW_DIR/"
+          git add "$PREVIEW_DIR"
+          if git diff --cached --quiet; then
+            echo "Preview is already up to date."
+          else
+            git commit -m "Deploy docs preview for PR #${{ github.event.pull_request.number }}"
+            push_with_retry
+          fi
+
+      - name: Comment preview link
+        if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request.number;
+            const url = `${process.env.PREVIEW_BASE_URL}/previews/pr-${pr}/`;
+            const sha = context.payload.pull_request.head.sha.substring(0, 7);
+            const marker = '<!-- docs-preview -->';
+            const body = `${marker}\n📖 **Docs preview** for commit \`${sha}\`: ${url}\n\n_The preview updates on every push and is deleted when the PR is closed._`;
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: pr,
+            });
+            const existing = comments.find((c) => c.body && c.body.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: pr,
+                body,
+              });
+            }
+
+  cleanup:
+    name: Delete PR preview
+    if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Configure git credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      - name: Delete PR preview
+        run: |
+          push_with_retry() {
+            local attempt=1
+            while true; do
+              if git push origin gh-pages; then
+                return 0
+              fi
+              if [ "$attempt" -ge 5 ]; then
+                return 1
+              fi
+              echo "::warning::gh-pages moved during the push (attempt ${attempt}/5); rebasing and retrying"
+              git fetch origin gh-pages
+              git rebase origin/gh-pages || {
+                git rebase --abort
+                return 1
+              }
+              sleep $((attempt * 5))
+              attempt=$((attempt + 1))
+            done
+          }
+
+          git fetch origin gh-pages
+          git checkout gh-pages
+          if [ -d "$PREVIEW_DIR" ]; then
+            git rm -rq "$PREVIEW_DIR"
+            git commit -m "Delete docs preview for PR #${{ github.event.pull_request.number }}"
+            push_with_retry
+          else
+            echo "No preview '$PREVIEW_DIR' to delete."
+          fi

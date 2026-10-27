@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: docs-deploy
+  cancel-in-progress: false
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,5 +28,40 @@ jobs:
       - name: Install the project
         run: uv sync --all-extras --dev
 
-      - name: Build and publish docs
-        run: uv run mkdocs gh-deploy --force
+      - name: Build docs
+        run: uv run mkdocs build -d build
+
+      - name: Configure git credentials
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+
+      # Replaces `mkdocs gh-deploy --force`, which would wipe the PR previews
+      # that build_docs.yaml stores under previews/ on gh-pages.
+      - name: Publish docs (keeping PR previews)
+        run: |
+          git fetch origin gh-pages
+          git worktree add gh-pages-tree origin/gh-pages
+          cd gh-pages-tree
+          git checkout -B gh-pages origin/gh-pages
+          git ls-files -z | grep -zv '^previews/' | xargs -0 -r git rm -q
+          cp -r ../build/. .
+          touch .nojekyll
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Docs are already up to date."
+            exit 0
+          fi
+          git commit -m "Deploy docs from ${GITHUB_SHA}"
+
+          attempt=1
+          until git push origin gh-pages; do
+            if [ "$attempt" -ge 5 ]; then
+              exit 1
+            fi
+            echo "::warning::gh-pages moved during the push (attempt ${attempt}/5); rebasing and retrying"
+            git fetch origin gh-pages
+            git rebase origin/gh-pages
+            sleep $((attempt * 5))
+            attempt=$((attempt + 1))
+          done
