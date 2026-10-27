@@ -25,4 +25,4 @@ def template(ctx: Context):
 @task()
 def docs(ctx: Context, live: bool = True):
     """Build the documentation."""
-    ctx.run(f"mkdocs {'serve' if live else 'build'}", **common_options)
+    ctx.run(f"zensical {'serve' if live else 'build'}", **common_options)

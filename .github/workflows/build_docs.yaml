@@ -41,13 +41,13 @@ jobs:
         run: uv sync --all-extras --dev
 
       - name: Build docs (strict)
-        run: uv run mkdocs build -d build --strict
+        run: uv run zensical build --clean --strict
 
       - name: Upload docs
         uses: actions/upload-artifact@v4
         with:
           name: docs
-          path: build
+          path: site
 
       - name: Configure git credentials
         if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login != 'dependabot[bot]'
@@ -82,7 +82,7 @@ jobs:
           git checkout gh-pages
           rm -rf "$PREVIEW_DIR"
           mkdir -p "$PREVIEW_DIR"
-          cp -r build/. "$PREVIEW_DIR/"
+          cp -r site/. "$PREVIEW_DIR/"
           git add "$PREVIEW_DIR"
           if git diff --cached --quiet; then
             echo "Preview is already up to date."
