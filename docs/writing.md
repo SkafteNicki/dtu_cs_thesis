@@ -7,6 +7,9 @@ The most important advice I can give in terms of writing your thesis: START IN G
 the thesis in the last couple of weeks before the deadline, but having the time to reflect on your writing is
 invaluable. *Accept* that writing is a process that takes time and sometimes is means that you have less time for
 coding/experimenting.
+In terms of the [fish model](starting.md#the-fish-model), the last ~1/6 of the project (the tail) is set aside for
+writing. That is only enough time if you already wrote drafts of your background, method and early results during the
+body.
 
 <figure markdown="span">
   ![scope](figures/student_writing.png){ width="700" }

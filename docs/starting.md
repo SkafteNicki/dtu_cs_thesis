@@ -1,5 +1,51 @@
 Alright, you have now started the thesis. What do to next?
 
+## 🐟 The fish model
+
+Before going into the details, it helps to have a mental model of how a thesis project usually unfolds. I like the
+"fish model" by my colleague [Jakob Bardram](https://www.bardram.net/the-art-of-doing-a-phd/). He made it for PhD
+students, but it works just as well for a thesis. The horizontal axis is time. The vertical axis shows how much you are
+doing in parallel: theoretical work (reading, thinking, writing) goes above the line and empirical work (data, code,
+experiments) goes below it.
+
+<figure markdown="span">
+![fish_model](figures/fish_model.png){ width="800" }
+<figcaption>
+The fish model, adapted for a thesis at DTU Compute from the original by
+<a href="https://www.bardram.net/the-art-of-doing-a-phd/">Jakob E. Bardram (2007)</a>.
+</figcaption>
+</figure>
+
+The fish has three parts:
+
+1. **The head (~1/3 of the time): be open-minded.** The fish keeps getting wider, because you should be exploring
+    broadly. Read the literature, talk to people, download and run existing code, reproduce a baseline and poke at the
+    data. Do not worry if much of this never makes it into the thesis. The head ends at the widest point of the fish,
+    and by then you should know:
+
+    * the related work and where your project fits in,
+    * your research question and what you expect to contribute,
+    * the methods you will use and how you will evaluate them,
+    * a plan for the rest of the project.
+
+    This is exactly what goes into the [project plan](#the-project-plan). The plan is due after one month, so it
+    forces you to start narrowing down early. It is fine to keep adjusting the details for a few more weeks after you
+    hand it in.
+
+2. **The body (~1/2 of the time): be focused.** From here on the fish only gets narrower. Build the system, run the
+    experiments, analyse the results, and write sections of the thesis as you go. Ideas you had in the head that do not
+    fit your research question go on a "future work" list, not on your to-do list. The most common mistake I see is a
+    student who keeps adding new directions in the body and then runs out of time.
+
+3. **The tail (~1/6 of the time): write and wrap up.** At some point you have to stop experimenting. Put a date for
+    this in your time plan and stick to it. The tail is for writing the thesis and turning the results you have into
+    clear figures and tables. It is not the time for new experiments. Remember that the tail only works if you
+    already wrote parts of the thesis during the body (see [Writing the thesis](writing.md)).
+
+For a 5-month thesis this works out to roughly 6-7 weeks in the head, 10-11 weeks in the body, and 3-4 weeks in the
+tail. These numbers are a rule of thumb, not a deadline. Still, if you are halfway through the project and the fish is
+still getting wider, bring it up at your next supervision meeting.
+
 ## 🟢 The first month
 
 The first month of the thesis depends a lot on the project you are doing. If the project is very well-defined you will
@@ -160,6 +206,8 @@ understand what you are doing. In general the project plan should contain the fo
     how long you expect each phase to take. As a bonus consider assigning each phase a risk level (low, medium, high)
     on how likely it is that you will be delayed in that phase. This is a good exercise to do, because it forces you to
     think about what can go wrong in each phase and how you can mitigate the risk of being delayed.
+    The [fish model](#the-fish-model) is a good starting point for the phases. In particular, decide when the body
+    ends and you stop running new experiments.
 
 5. **References**:
     After the first month you should already have read a bunch of literature and including and references to this

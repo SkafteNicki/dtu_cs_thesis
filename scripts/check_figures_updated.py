@@ -7,6 +7,7 @@ SCRIPT_OUTPUTS = {
         "docs/figures/quadrants.png",
         "docs/figures/grade_distribution.png",
         "docs/figures/student_writing.png",
+        "docs/figures/fish_model.png",
     ],
 }
 

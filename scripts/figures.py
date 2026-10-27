@@ -283,6 +283,128 @@ def student_writing():
 
 
 @app.command()
+def fish_model():
+    # Adapted from the "fish model" by Jakob E. Bardram (2007)
+    head_end, body_end = 1 / 3, 5 / 6
+    theory_color, empirical_color = "rgba(70, 130, 200, {})", "rgba(120, 170, 70, {})"
+
+    fig = go.Figure()
+
+    # Upper half is theoretical work, lower half is empirical work
+    parts = [
+        ([0, head_end, head_end], [0, 1, 0], theory_color.format(0.55)),  # head
+        ([0, head_end, head_end], [0, -1, 0], empirical_color.format(0.45)),
+        ([head_end, head_end, body_end], [0, 1, 0], theory_color.format(0.85)),  # body
+        ([head_end, head_end, body_end], [0, -1, 0], empirical_color.format(0.75)),
+        ([body_end, 1, 1], [0, 0.75, 0], theory_color.format(1.0)),  # tail
+        ([body_end, 1, 1], [0, -0.75, 0], empirical_color.format(0.95)),
+    ]
+    for x, y, color in parts:
+        fig.add_trace(
+            go.Scatter(
+                x=x + [x[0]],
+                y=y + [y[0]],
+                fill="toself",
+                fillcolor=color,
+                line=dict(color="white", width=1),
+                mode="lines",
+                hoverinfo="skip",
+            )
+        )
+
+    # Time axis, the line between head and body, and the milestones
+    fig.add_shape(
+        type="line", x0=-0.03, x1=1.05, y0=0, y1=0, line=dict(color="black", width=2)
+    )
+    fig.add_shape(
+        type="line",
+        x0=head_end,
+        x1=head_end,
+        y0=-1.05,
+        y1=1.05,
+        line=dict(color="black", width=3),
+    )
+    milestones = [
+        (0, "#FFD700", "Start"),
+        (head_end, "#FF8C00", "Scope fixed"),
+        (body_end, "#FF3333", "Stop experiments"),
+        (1, "#990000", "Hand-in"),
+    ]
+    for x, color, label in milestones:
+        fig.add_trace(
+            go.Scatter(
+                x=[x],
+                y=[0],
+                mode="markers",
+                marker=dict(size=18, color=color, line=dict(color="black", width=1.5)),
+                hoverinfo="skip",
+            )
+        )
+        fig.add_annotation(
+            x=x,
+            y=0,
+            text=f"<b>{label}</b>",
+            showarrow=False,
+            yshift=-22,
+            font=dict(size=13),
+            bgcolor="white",
+        )
+
+    text_annotations = [
+        (head_end / 2, 0.22, "<b>OPEN-MINDED</b>", 20),
+        ((head_end + body_end) / 2, 0.22, "<b>FOCUSED</b>", 20),
+        (
+            head_end / 2,
+            1.3,
+            "Read related work<br>Explore ideas<br>Define research question",
+            14,
+        ),
+        (
+            (head_end + body_end) / 2,
+            1.3,
+            "Develop the method<br>Start writing chapters<br>Refine the story",
+            14,
+        ),
+        ((body_end + 1) / 2, 1.3, "Write the<br>thesis", 14),
+        (
+            head_end / 2,
+            -1.3,
+            "Explore the data<br>Reproduce baselines<br>Quick prototypes",
+            14,
+        ),
+        (
+            (head_end + body_end) / 2,
+            -1.3,
+            "Build the system<br>Run experiments<br>Analyse results",
+            14,
+        ),
+        ((body_end + 1) / 2, -1.3, "Polish figures<br>and results", 14),
+        (-0.1, 0.6, "<b>Theoretical<br>work</b>", 15),
+        (-0.1, -0.6, "<b>Empirical<br>work</b>", 15),
+        (head_end / 2, -1.85, "<b>Head</b>: ~1/3", 16),
+        ((head_end + body_end) / 2, -1.85, "<b>Body</b>: ~1/2", 16),
+        ((body_end + 1) / 2, -1.85, "<b>Tail</b>: ~1/6", 16),
+    ]
+    for x, y, text, size in text_annotations:
+        fig.add_annotation(x=x, y=y, text=text, showarrow=False, font=dict(size=size))
+
+    fig.update_layout(
+        showlegend=False,
+        xaxis=dict(range=[-0.2, 1.08], visible=False),
+        yaxis=dict(range=[-2.0, 1.75], visible=False),
+        plot_bgcolor="white",
+        paper_bgcolor="white",
+        width=1000,
+        height=650,
+        margin=dict(l=10, r=10, t=10, b=10),
+    )
+
+    output_path = Path("docs/figures/fish_model.png")
+    output_path.parent.mkdir(parents=True, exist_ok=True)  # Ensure directory exists
+    fig.write_image(output_path)
+
+
+@app.command()
 def all():
     print("Quadrant fig...")
     quadrants()
@@ -290,6 +412,8 @@ def all():
     grade_distribution()
     print("Student writing fig...")
     student_writing()
+    print("Fish model fig...")
+    fish_model()
 
 
 if __name__ == "__main__":
