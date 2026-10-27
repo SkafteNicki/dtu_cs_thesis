@@ -3,7 +3,7 @@
 {
     "name": "{{cookiecutter.project_name}}",
     // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-    "image": "mcr.microsoft.com/devcontainers/python:{{cookiecutter.python_version}}-bullseye",
+    "image": "mcr.microsoft.com/devcontainers/python:{{cookiecutter.python_version}}-bookworm",
     "features": {},
 
     // Use 'postCreateCommand' to run commands after the container is created.
