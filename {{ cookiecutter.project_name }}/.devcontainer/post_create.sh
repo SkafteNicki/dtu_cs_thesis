@@ -2,6 +2,9 @@
 set -e  # Exit on error
 
 echo "🔧 Installing TeX Live and LaTeX tools..."
+# The base image ships a Yarn apt source whose signing key has expired, which
+# makes `apt-get update` fail. Yarn is not needed here, so drop the source.
+sudo rm -f /etc/apt/sources.list.d/yarn.list
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends \
     texlive-latex-recommended \
