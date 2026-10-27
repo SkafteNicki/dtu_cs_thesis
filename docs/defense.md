@@ -37,12 +37,29 @@ be present. You are free to invite friends and family to the defense. The format
     challenge your work. This is very much a discussion instead of you just answering questions.
 
 3. 10 min of grading. You (together with friends and family) will be asked to leave the room and you need to take all
-    your belongings with you. Supervisor and censor then discuss what grade you should get. As a rule of thumb you can
-    expect that the majority of the grade is based on your report and the presentation is often used to determine which
-    grade you should get if you are on the edge between two grades.
+    your belongings with you. Supervisor and censor then discuss what grade you should get based on an overall
+    assessment of the report, the presentation and the questions (see [Evaluation](#evaluation) below). In practice,
+    the report is where most of your work is documented, so it naturally carries a lot of weight, while the presentation
+    and questions give you the chance to show your understanding and can make the difference if you are on the edge
+    between two grades.
 
 4. You get pulled in (without friends and family) and you are told the grade. You will most likely be given some
     feedback for you to understand why you got the grade you got.
+
+## ⚖️ Evaluation
+
+The grade is an overall assessment of the thesis project. This means that the report, the presentation and the
+questions & answers session are evaluated together and not graded separately. What we measure is how well you fulfil
+the learning objectives for your thesis, both:
+
+* The general (*meta*) learning objectives that are the same for all theses, e.g. that you can delimit a complex open
+    issue, apply elements of current research, communicate your results and manage all phases of a project.
+
+* The programme specific learning objectives for your study line, i.e. the technical competences that a graduate from
+    your specific study line should have.
+
+You can find both sets of learning objectives in the [Read the rules](before.md#read-the-rules) section. It is a good
+idea to read them again before the defense and think about how your report and presentation show that you fulfil them.
 
 Finally, you should not be nervous. You have done the work, and you know your project better than anyone else. Just be
 honest and open, and you will do fine. In general, students tend to get good grades, see figure below.

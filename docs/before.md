@@ -250,6 +250,65 @@ They will look something like this:
 All these learning objectives are fairly *meta*, but they can interpret as you need to master every aspect of doing
 a thesis from the technical aspects to the communication and project management.
 
+In addition to the general learning objectives, each study line has its own *programme specific* learning objectives.
+These are much more concrete and describe the technical competences a graduate from that specific study line should
+have. Your thesis does not need to cover all of them, but it is a good idea to check that your project fits within
+them. As an example, here are the programme specific learning objectives for the MSc in
+[Human-Centered Artificial Intelligence](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/human-centered-artificial-intelligence#Programme_specific_goals_for_learning_outcome):
+
+!!! note "Programme specific learning objectives (MSc in Human-Centered Artificial Intelligence)"
+
+    A Master of Science in Engineering (Human-Centered Artificial Intelligence):
+
+    1️ can delimit a complex open issue and select technological solution options in relation to data, software,
+        interaction and computer graphics
+
+    2️ can conceptualize, design, implement and validate software solutions
+
+    3️ can model and design interaction between humans and computer systems
+
+    4️ can apply elements of artificial intelligence and machine learning, including generative artificial intelligence
+
+    5️ can apply visual computing in the development of digital media products
+
+    6️ can combine technological and commercial knowledge for the design of digital media products
+
+    7️ can incorporate elements of new research, and assess ethical, societal, and responsible artificial intelligence
+        implications, in the development of innovative digital media products
+
+    8️ can model user needs hierarchically as outcomes, activites and prioritized tasks and apply lean methods to
+        iteratively validate solutions based on rapid prototyping
+
+    9️ can develop business models to optimize value in digital media products
+
+    10 can formulate quantitative models and use them to solve technological issues in relation to data, software,
+        interaction and computer graphics
+
+    11 can apply a high-level programming language (e.g. Python) to utilize web APIs and model APIs for data
+        acquisition and AI integration
+
+    12 can apply algorithms to recommend media (text, audio, video) according to user preferences and user context
+        (friends, mood, location, etc).
+
+You can find the programme specific learning objectives for the most common computer science related study lines at
+DTU here (the bachelor programme specifications are only available in Danish, where the section is called
+*Retningsspecifikke mål for læringsudbytte*):
+
+| Level | Study line                                    | Link                                                                                                                                                                |
+|-------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| MSc   | Computer Science and Engineering              | [link](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/Computer-Science-and-Engineering#Programme_specific_goals_for_learning_outcome)       |
+| MSc   | Human-Centered Artificial Intelligence        | [link](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/human-centered-artificial-intelligence#Programme_specific_goals_for_learning_outcome) |
+| MSc   | Mathematical Modelling and Computation        | [link](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/Mathematical-Modelling-and-Computation#Programme_specific_goals_for_learning_outcome) |
+| MSc   | Business Analytics                            | [link](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/Business-Analytics#Programme_specific_goals_for_learning_outcome)                    |
+| MSc   | Autonomous Systems                            | [link](https://student.dtu.dk/en/programme-specifications/Master-of-Science-in-Engineering/Autonomous-Systems#Programme_specific_goals_for_learning_outcome)                    |
+| BSc   | Software Technology (Softwareteknologi)       | [link](https://student.dtu.dk/studieordninger/bachelor/softwareteknologi/studieordning#Retningsspecifikke_mål_for_læringsudbytte)                                    |
+| BSc   | Artificial Intelligence and Data              | [link](https://student.dtu.dk/studieordninger/bachelor/kunstig-intelligens-og-data/studieordning#Retningsspecifikke_mål_for_læringsudbytte)                           |
+| BSc   | Cybertechnology (Cyberteknologi)              | [link](https://student.dtu.dk/studieordninger/bachelor/cyberteknologi/studieordning#Retningsspecifikke_mål_for_læringsudbytte)                                       |
+| BSc   | Applied Mathematics (Anvendt matematik)       | [link](https://student.dtu.dk/studieordninger/bachelor/anvendt-matematik/studieordning#Retningsspecifikke_mål_for_læringsudbytte)                                    |
+| BEng  | Software Technology (Diplom Softwareteknologi) | [link](https://student.dtu.dk/studieordninger/diplomingenioer/softwareteknologi/Kompetenceprofil#Retningsspecifikke_mål_for_læringsudbytte)                         |
+
+If your study line is not in the list, find it through <https://student.dtu.dk/en/programme-specifications>.
+
 ## 💾 Registering the project
 
 The project needs to be officially registered by your supervisor to DTU study administration. In practice this should
@@ -262,7 +321,9 @@ be done about two weeks before you start the work. For your supervisor to regist
 
     * **Description**: A short (5-10 lines) description of the project, that motivates the project and gives an overview
         of the work to be done. You do not fix the project description in stone, but it is a good idea to have a clear
-        idea of what you want to do.
+        idea of what you want to do. The description should also make it clear that the project falls within the
+        programme specification of your study line, i.e. that it matches the programme specific learning objectives
+        (see [Read the rules](#read-the-rules)).
 
     * **Number of ECTS**: You can do the thesis for 30, 32.5 or 35 ECTS. The default is 30 ECTS.
 
