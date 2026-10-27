@@ -29,4 +29,5 @@ It depends on whether you are doing a bachelor or a master thesis and on the num
     work. The total project period can be at most 18 weeks.
 
 In both cases you get an additional 3 weeks for every 5 ECTS credits of courses you take in parallel with the project.
-Always check the [DTU rules](https://student.dtu.dk/en/rules/afsluttende-projekter) for the exact numbers.
+If you can document an impairment, the project period can also be extended by up to 3 weeks. This needs to be arranged
+before the project starts (for group projects it applies to all group members). Always check the [DTU rules](https://student.dtu.dk/en/rules/afsluttende-projekter) for the exact numbers.
