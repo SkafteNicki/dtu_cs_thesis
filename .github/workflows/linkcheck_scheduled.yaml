@@ -1,0 +1,47 @@
+name: Check links for staleness
+
+# Weekly run that catches external links going dead between PRs. It is kept
+# separate from linkcheck.yaml: GitHub disables workflows with a schedule
+# trigger after 60 days without repository activity, and that must not take the
+# required PR check down with it.
+on:
+  schedule:
+    - cron: "0 13 * * 1"  # run every Monday at 13:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write  # to re-enable this workflow, see the last step
+
+jobs:
+  link_check:
+    name: Scheduled link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install the project
+        run: uv sync --all-extras --dev
+
+      - name: Build docs
+        run: uv run zensical build --clean
+
+      # No cache here: the point of this run is to re-check every link.
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "--cache=false site README.md '{{ cookiecutter.project_name }}/**/*.md'"
+          fail: true
+
+      # Enabling the workflow through the API resets GitHub's 60-day inactivity
+      # timer, so the schedule keeps running on a quiet repository.
+      - name: Keep this workflow enabled
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow enable linkcheck_scheduled.yaml --repo "$GITHUB_REPOSITORY"

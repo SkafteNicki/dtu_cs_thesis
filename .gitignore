@@ -484,3 +484,6 @@ TSWLatexianTemp*
 
 # local stuff
 project_name/
+
+# lychee link checker cache
+.lycheecache

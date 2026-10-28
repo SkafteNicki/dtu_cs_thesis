@@ -1,20 +1,43 @@
 name: Check Markdown links
 
+# No schedule trigger here on purpose: see linkcheck_scheduled.yaml.
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-  schedule:
-    - cron: "0 13 * * 1"  # run every Monday at 13:00 UTC
 
 jobs:
   link_check:
+    # Required status check in the `PR` ruleset on main; keep the name in sync.
     name: Check Markdown links
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: tcort/github-action-markdown-link-check@v1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
         with:
-          config-file: '.github/linkcheck_config.json'
-          use-verbose-mode: true
+          enable-cache: true
+
+      - name: Install the project
+        run: uv sync --all-extras --dev
+
+      # Check the built site rather than the raw Markdown, so anchors resolve
+      # exactly as on the published docs.
+      - name: Build docs
+        run: uv run zensical build --clean
+
+      - name: Restore lychee cache
+        uses: actions/cache@v4
+        with:
+          path: .lycheecache
+          key: lychee-${{ github.sha }}
+          restore-keys: lychee-
+
+      # Settings are in lychee.toml at the repository root.
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: "site README.md '{{ cookiecutter.project_name }}/**/*.md'"
+          fail: true

@@ -6,6 +6,7 @@ repo_url: https://github.com/SkafteNicki/dtu_cs_thesis
 theme:
   language: en
   name: material
+  variant: classic
   favicon: figures/Corp_Red_RGB.png
   logo: figures/Corp_Red_RGB.png
   icon:
@@ -52,10 +53,9 @@ markdown_extensions:
   - tables
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+      emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
 
 plugins:
   - search
