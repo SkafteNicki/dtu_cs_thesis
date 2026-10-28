@@ -1,0 +1,1149 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../before/">
+      
+      
+        <link rel="next" href="../meetings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../figures/Corp_Red_RGB.png">
+      <meta name="generator" content="zensical-0.0.67">
+    
+    
+      
+        <title>✨ Getting started - DTU Compute Thesis Guide</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/classic/main.cfc7948b.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/classic/palette.bf1c5cd6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-fish-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="DTU Compute Thesis Guide" class="md-header__button md-logo" aria-label="DTU Compute Thesis Guide" data-md-component="logo">
+      
+  <img src="../figures/Corp_Red_RGB.png" alt="DTU Compute Thesis Guide">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DTU Compute Thesis Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ✨ Getting started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="none" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/SkafteNicki/dtu_cs_thesis" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="DTU Compute Thesis Guide" class="md-nav__button md-logo" aria-label="DTU Compute Thesis Guide" data-md-component="logo">
+      
+  <img src="../figures/Corp_Red_RGB.png" alt="DTU Compute Thesis Guide">
+
+    </a>
+    DTU Compute Thesis Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SkafteNicki/dtu_cs_thesis" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  🏠 Home
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../before/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  🚀 Before starting
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  📖 During the thesis
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        
+          <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+            <label class="md-nav__title" for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+              
+  
+  📖 During the thesis
+
+            </label>
+            <ul class="md-nav__list" data-md-scrollfix>
+              
+                
+                  
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+        <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ✨ Getting started
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ✨ Getting started
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-fish-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐟 The fish model
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-first-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🟢 The first month
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#literature-searching-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Literature searching tips
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-project-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🗓️ The project plan
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-a-logbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Keeping a logbook
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meetings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  📅 Meetings
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  💻 Code
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  📝 Writing the thesis
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+                
+                  
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handing_in/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  📬 Hand-in
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+                
+              
+            </ul>
+          </nav>
+        
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../defense/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  🎤 The Defense
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  📚 Resources
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ❓ FAQ
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-fish-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🐟 The fish model
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-first-month" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🟢 The first month
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#literature-searching-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Literature searching tips
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-project-plan" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        🗓️ The project plan
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keeping-a-logbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        📚 Keeping a logbook
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1 id="__skip">✨ Getting started</h1>
+
+<p>Alright, you have now started the thesis. What do to next?</p>
+<h2 id="the-fish-model">🐟 The fish model</h2>
+<p>Before going into the details, it helps to have a mental model of how a thesis project usually unfolds. I like the
+"fish model" by my colleague <a href="https://www.bardram.net/the-art-of-doing-a-phd/">Jakob Bardram</a>. He made it for PhD
+students, but it works just as well for a thesis. The horizontal axis is time. The vertical axis shows how much you are
+doing in parallel: theoretical work (reading, thinking, writing) goes above the line and empirical work (data, code,
+experiments) goes below it.</p>
+<figure>
+<a class="glightbox" data-type="image" href="../figures/fish_model.png"><img alt="fish_model" src="../figures/fish_model.png" width="800" /></a>
+
+<figcaption>
+The fish model, adapted for a thesis at DTU Compute from the original by
+<a href="https://www.bardram.net/the-art-of-doing-a-phd/">Jakob E. Bardram (2007)</a>.
+</figcaption>
+</figure>
+<p>The fish has three parts:</p>
+<ol>
+<li>
+<p><strong>The head (~1/3 of the time): be open-minded.</strong> The fish keeps getting wider, because you should be exploring
+    broadly. Read the literature, talk to people, download and run existing code, reproduce a baseline and poke at the
+    data. Do not worry if much of this never makes it into the thesis. The head ends at the widest point of the fish,
+    and by then you should know:</p>
+<ul>
+<li>the related work and where your project fits in,</li>
+<li>your research question and what you expect to contribute,</li>
+<li>the methods you will use and how you will evaluate them,</li>
+<li>a plan for the rest of the project.</li>
+</ul>
+<p>This is exactly what goes into the <a href="#the-project-plan">project plan</a>. The plan is due after one month, so it
+forces you to start narrowing down early. It is fine to keep adjusting the details for a few more weeks after you
+hand it in.</p>
+</li>
+<li>
+<p><strong>The body (~1/2 of the time): be focused.</strong> From here on the fish only gets narrower. Build the system, run the
+    experiments, analyse the results, and write sections of the thesis as you go. Ideas you had in the head that do not
+    fit your research question go on a "future work" list, not on your to-do list. The most common mistake I see is a
+    student who keeps adding new directions in the body and then runs out of time.</p>
+</li>
+<li>
+<p><strong>The tail (~1/6 of the time): write and wrap up.</strong> At some point you have to stop experimenting. Put a date for
+    this in your time plan and stick to it. The tail is for writing the thesis and turning the results you have into
+    clear figures and tables. It is not the time for new experiments. Remember that the tail only works if you
+    already wrote parts of the thesis during the body (see <a href="../writing/">Writing the thesis</a>).</p>
+</li>
+</ol>
+<p>For a 5-month thesis this works out to roughly 6-7 weeks in the head, 10-11 weeks in the body, and 3-4 weeks in the
+tail. These numbers are a rule of thumb, not a deadline. Still, if you are halfway through the project and the fish is
+still getting wider, bring it up at your next supervision meeting.</p>
+<h2 id="the-first-month">🟢 The first month</h2>
+<p>The first month of the thesis depends a lot on the project you are doing. If the project is very well-defined you will
+find that you can start coding and analyzing data right away. However, in most cases you will need to spend some time
+reading literature and getting a better understanding of the problem you are trying to solve. This is completely normal,
+and you should not be worried about it. In general expect to</p>
+<ol>
+<li>
+<p>Read literature</p>
+</li>
+<li>
+<p>Begin analyzing data</p>
+</li>
+<li>
+<p>Write some initial code</p>
+</li>
+</ol>
+<p>When you are closing in on the first month you need to hand-in a project plan.</p>
+<div class="admonition note">
+<p class="admonition-title">Thesis template</p>
+<p>If you want a barebone thesis template to get started with I have created one that is included in this repository.
+It is a <a href="https://cookiecutter.readthedocs.io/en/latest/">cookiecutter</a> template that you can use to create a new
+thesis project by running the following command in your terminal:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>cookiecutter
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cookiecutter<span class="w"> </span>https://github.com/SkafteNicki/dtu_cs_thesis
+</span></code></pre></div>
+<p>and answer the questions in the terminal. It contains a basic structure for the thesis, your project plan and
+general code structure. For full reproducibility, it also contains a
+<a href="https://code.visualstudio.com/docs/devcontainers/create-dev-container">devcontainer</a> setup that will automatically
+install all the dependencies needed to run code and write the thesis.</p>
+<details class="example">
+<summary>Template structure</summary>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>project_name/
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>├──<span class="w"> </span>.devcontainer
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│<span class="w">   </span>├──<span class="w"> </span>devcontainer.json
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>│<span class="w">   </span>└──<span class="w"> </span>post_create.sh
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>├──<span class="w"> </span>.gitignore
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>├──<span class="w"> </span>LICENSE
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>├──<span class="w"> </span>notebooks
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>├──<span class="w"> </span>.pre-commit-config.yaml
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>├──<span class="w"> </span>project_plan
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│<span class="w">   </span>├──<span class="w"> </span>bibliography.bib
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│<span class="w">   </span>├──<span class="w"> </span>main.pdf
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>│<span class="w">   </span>├──<span class="w"> </span>main.tex
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>│<span class="w">   </span>├──<span class="w"> </span>time_plan.ods
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│<span class="w">   </span>└──<span class="w"> </span>time_plan.png
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>├──<span class="w"> </span>pyproject.toml
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>├──<span class="w"> </span>README.md
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>├──<span class="w"> </span>scripts
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>├──<span class="w"> </span>src
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>│<span class="w">   </span>└──<span class="w"> </span>.gitkeep
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>├──<span class="w"> </span>thesis
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>│<span class="w">   </span>├──<span class="w"> </span>backmatter
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>appendix.tex
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>backpage.tex
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>│<span class="w">   </span>├──<span class="w"> </span>bibliography.bib
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>│<span class="w">   </span>├──<span class="w"> </span>chapters
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>01_introduction.tex
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>│<span class="w">   </span>├──<span class="w"> </span>frontmatter
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>abstract.tex
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>acknowledgements.tex
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>approval.tex
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>copyright.tex
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>frontpage.tex
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a>│<span class="w">   </span>├──<span class="w"> </span>main.pdf
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a>│<span class="w">   </span>├──<span class="w"> </span>main.tex
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a>│<span class="w">   </span>├──<span class="w"> </span>pictures
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a>│<span class="w">   </span>│<span class="w">   </span>├──<span class="w"> </span>dtured_rgb.pdf
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a>│<span class="w">   </span>│<span class="w">   </span>└──<span class="w"> </span>DTU_stock_photo.jpg
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a>│<span class="w">   </span>├──<span class="w"> </span>readme.md
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a>│<span class="w">   </span>└──<span class="w"> </span>setup
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a>│<span class="w">       </span>├──<span class="w"> </span>info.tex
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a>│<span class="w">       </span>├──<span class="w"> </span>preamble.tex
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a>│<span class="w">       </span>└──<span class="w"> </span>settings.tex
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a>└──<span class="w"> </span>uv.lock
+</span></code></pre></div>
+</details>
+</div>
+<h2 id="literature-searching-tips">📚 Literature searching tips</h2>
+<p>As part of your thesis you need to read relevant literature. This is a crucial part of the scientific process, and you
+should be able to find and understand the key papers related to your project. If you have a good strategy for searching
+for literature, stick to it. Else, here are some tips for finding relevant literature:</p>
+<ul>
+<li>
+<p>I really like to use <a href="https://consensus.app/">https://consensus.app/</a> which is an AI-powered search engine for
+    scientific papers. Because you can fuzzy-search for topics it is excellent for getting an overview of a new topic.
+    It does not cover all scientific papers, but it is a good starting point.</p>
+</li>
+<li>
+<p>Use Google Scholar <a href="https://scholar.google.com">https://scholar.google.com</a> to search for scientific papers. Especially, if you have already
+    found a paper of interest, using the "Cited by" feature allows you to find more recent papers that have cited
+    a paper you find interesting.</p>
+</li>
+<li>
+<p>Use the university library's search engine <a href="https://findit.dtu.dk/">https://findit.dtu.dk/</a>. This will allow
+    you to access papers that are behind some paywalls (because DTU has a subscription to many journals).</p>
+</li>
+<li>
+<p><a href="https://www.connectedpapers.com/">https://www.connectedpapers.com/</a> is a great tool for finding related papers to a
+    paper you find interesting. It creates a graph of related papers that can help you find more literature.</p>
+</li>
+</ul>
+<p>Try to find at least 3-5 papers that will serve as the main foundation for your thesis. Read these papers
+thoroughly and try to understand the methods they use and the results they obtain. Additionally, you should find 10+
+other papers that are relevant to your thesis. You do not need to read these papers in detail, but you should
+be familiar with their content.</p>
+<p class="annotate">You should aim to have at least 30 references in your thesis (1). Again, most should be scientific papers preferably
+from journals or conferences e.g.
+<a href="https://www.sciencedirect.com/science/article/pii/S2666668521000070">peer-reviewed papers</a>. However, everything
+really goes as long as you are critical about your sources. This could be blog posts, technical documentation, videos,
+non-peer-reviewed preprints, Wikipedia, books etc. But please do not use sources from any kind of generative AI response
+as they are known to
+<a href="https://www.tandfonline.com/doi/full/10.1080/0361526X.2024.2433640#abstract">hallucinate references</a>.</p>
+<ol>
+<li><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:" /> Yes, this is an arbitrary number, and it is not a hard requirement. Fight me.</li>
+</ol>
+<p>If you want to be even more systematic about your literature search (not required in any way), I would recommend
+following the strategy laid out in this <a href="https://www.sciencedirect.com/science/article/pii/S2215016122002746">paper</a>,
+where you first plan your search  strategy by defining your search terms, inclusion and exclusion criteria etc. Then you
+perform the search and finally selects and refine the papers you have found, see figure below.</p>
+<figure>
+<a class="glightbox" data-type="image" href="../figures/literature_strategy.jpg"><img alt="scientific_method" src="../figures/literature_strategy.jpg" width="300" /></a>
+
+<figcaption>
+From Carrera-Rivera et al. (2022) How-to conduct a systematic literature review: A quick guide for computer science
+research, MethodsX
+</figcaption>
+</figure>
+<p>See this <a href="https://findit.dtu.dk/en/catalog/640148e491aff93c12cdefb4">thesis</a> which implements the strategy in during
+their literature search.</p>
+<h2 id="the-project-plan">🗓️ The project plan</h2>
+<p>You have two hand-ins during your thesis: a project plan precisely 1 month after starting the project and your thesis.
+The project plan is a short document (2-3 pages) where you in more details describe what you are going to be doing
+throughout the thesis. It is intended as a document to help you plan your work and to help your supervisor
+understand what you are doing. In general the project plan should contain the following sections:</p>
+<ol>
+<li>
+<p><strong>Motivation</strong>:
+    The motivation for why you are doing this project. You should lay out the problem you are trying to solve and why
+    it is important to spend time on solving this problem.</p>
+</li>
+<li>
+<p><strong>Background</strong>:
+    The background of the project. You are never starting from scratch, so you should describe what current solutions
+    look like and why they are not sufficient.</p>
+</li>
+<li>
+<p><strong>Research question</strong>:
+    Most important part of the project plan. What is the overall research question you are trying to answer? You
+    can have more than one, but try to keep it to a minimum. The research question should be specific and well-defined,
+    because in the end this is the question you should be answering with your thesis. Consider the
+    <a href="https://en.wikipedia.org/wiki/Scientific_method">scientific method</a> when writing the research question.</p>
+</li>
+<li>
+<p><strong>Time plan</strong>:
+    A overall time plan for the project. This should be in the form of a
+    <a href="https://en.wikipedia.org/wiki/Gantt_chart">Gantt chart</a> or similar. Include the different phases of the project and
+    how long you expect each phase to take. As a bonus consider assigning each phase a risk level (low, medium, high)
+    on how likely it is that you will be delayed in that phase. This is a good exercise to do, because it forces you to
+    think about what can go wrong in each phase and how you can mitigate the risk of being delayed.
+    The <a href="#the-fish-model">fish model</a> is a good starting point for the phases. In particular, decide when the body
+    ends and you stop running new experiments.</p>
+</li>
+<li>
+<p><strong>References</strong>:
+    After the first month you should already have read a bunch of literature and including and references to this
+    literature is a good idea. Literature should here be understood as anything you have read that is relevant to
+    your project, either scientific papers, books, blog posts, technical documentation, videos etc.</p>
+</li>
+</ol>
+<figure>
+<a class="glightbox" data-type="image" href="../figures/scientific_method.png"><img alt="scientific_method" src="../figures/scientific_method.png" width="300" /></a>
+
+<figcaption>
+The scientific method. When considering your research question you should consider the scientific method, namely that
+your research question is essentially the hypothesis you are trying to prove or disprove.
+</figcaption>
+</figure>
+<p>For examples of project plans, ask your supervisor if they have any examples.</p>
+<p>The project plan should be handed in 1 month after starting the project. After registering the thesis a project/group
+will be created in Campusnet <a href="https://campusnet.dtu.dk">https://campusnet.dtu.dk</a> where you under the "Assignments" tab should be able to find the
+project plan assignment. The project plan should be handed in as a PDF file.</p>
+<h2 id="keeping-a-logbook">📚 Keeping a logbook</h2>
+<p>You should really keep a logbook throughout the thesis. You are not going to remember what you did in the beginning of
+the thesis when you reach the end of the thesis, without having taken notes along the way. Here are some general ways
+of doing this (ordered by complexity):</p>
+<ul>
+<li>
+<p>💡 Create a running powerpoint/google slides presentation where you each week add 1 or 2 slides with what you have done,
+    any figures you have produced, relevant literature etc. Think of it as a dumping ground for all your thoughts.
+    Really easy to get started with, but in the end you may have a 100-page slidedeck to look through.</p>
+</li>
+<li>
+<p>💡 Use <a href="https://www.notion.com">Notion</a> (online) /<a href="https://obsidian.md/">Obsidian</a> (local) to document your findings
+    and thoughts using markdown. This is a bit more complex to setup and use, but you can begin to structure your notes
+    and make them searchable.</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../before/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🚀 Before starting">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                🚀 Before starting
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../meetings/" class="md-footer__link md-footer__link--next" aria-label="Next: 📅 Meetings">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                📅 Meetings
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="mailto:nsde@dtu.dk" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 8-8 5-8-5V6l8 5 8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://skaftenicki.github.io/" target="_blank" rel="noopener" title="skaftenicki.github.io" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2s.06-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.92 7.92 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8 8 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.7 15.7 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/SkafteNicki" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog" role="status" aria-atomic="true">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["navigation.instant","navigation.indexes","navigation.expand","content.code.copy","content.code.annotate","navigation.footer","search.suggest","search.highlight"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","clipboard.error":"Could not copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.67a597eb.min.js"></script>
+      
+    
+  </body>
+</html>
