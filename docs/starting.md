@@ -141,7 +141,7 @@ for literature, stick to it. Else, here are some tips for finding relevant liter
     found a paper of interest, using the "Cited by" feature allows you to find more recent papers that have cited
     a paper you find interesting.
 
-* Use the university library's search engine <https://www.dtu.dk/english/service-and-support/library>. This will allow
+* Use the university library's search engine <https://findit.dtu.dk/>. This will allow
     you to access papers that are behind some paywalls (because DTU has a subscription to many journals).
 
 * [https://www.connectedpapers.com/](https://www.connectedpapers.com/) is a great tool for finding related papers to a

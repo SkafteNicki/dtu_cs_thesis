@@ -79,7 +79,7 @@ You can in general find supervisors by looking at the page belonging to one of t
 | Dynamical Systems            | Modeling, forecasting, optimization, and control of dynamic systems   | <https://www.compute.dtu.dk/sections/dynsys>    |
 | Embedded Systems Engineering | Hardware–software co-design, edge/cloud systems, dependable computing | <https://www.compute.dtu.dk/sections/emsys>     |
 | Mathematics                  | Pure and applied mathematics, algebra, analysis, geometry             | <https://www.compute.dtu.dk/sections/math>      |
-| Scientific Computing         | Numerical algorithms, modeling, simulation, and high-performance comp.| <https://www.compute.dtu.dk/sections/scicom>    |
+| Scientific Computing         | Numerical algorithms, modeling, simulation, and high-performance comp.| <https://www.compute.dtu.dk/sections/scicomp>   |
 | Software Systems Engineering | Software engineering, programming languages, formal methods           | <https://www.compute.dtu.dk/sections/sofsys>    |
 | Statistics and Data Analysis | Statistics, bioinformatics, data analysis, pattern recognition        | <https://www.compute.dtu.dk/sections/stat>      |
 | Visual Computing             | Image analysis, computer vision, graphics, 3D modeling                | <https://www.compute.dtu.dk/sections/viscom>    |

@@ -1,5 +1,5 @@
-1. **Saul Greenberg’s Grad Tips**
-    [https://saul.cpsc.ucalgary.ca/pmwiki.php/GradTips/GradTips](https://saul.cpsc.ucalgary.ca/pmwiki.php/GradTips/GradTips)
+1. **Saul Greenberg’s Grad Tips** (archived copy; the original page is no longer online)
+    [https://web.archive.org/web/20260710080734/https://saul.cpsc.ucalgary.ca/pmwiki.php/GradTips/GradTips](https://web.archive.org/web/20260710080734/https://saul.cpsc.ucalgary.ca/pmwiki.php/GradTips/GradTips)
 
 2. **Deconstruction Chapter 1 (Azuma)**
     [http://www.cs.unc.edu/~azuma/hitch4.html](http://www.cs.unc.edu/~azuma/hitch4.html)

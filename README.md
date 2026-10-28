@@ -18,3 +18,15 @@ uv run zensical serve
 ```
 
 Documentation is online here: <https://skaftenicki.github.io/dtu_cs_thesis/>
+
+## Checking links
+
+CI checks all links with [lychee](https://lychee.cli.rs) on every pull request and once a week. It checks the built
+site, so `#anchor` links are resolved exactly as readers see them, plus this README and the Markdown in the cookiecutter
+template. Settings and the list of excluded sites (with the reason for each) are in `lychee.toml`. To run the same check
+locally, [install lychee](https://lychee.cli.rs/guides/getting-started/) and run from the repository root:
+
+```
+uv run zensical build --clean
+lychee site README.md '{{ cookiecutter.project_name }}/**/*.md'
+```

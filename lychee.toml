@@ -1,0 +1,48 @@
+# Config for the lychee link checker (https://lychee.cli.rs), used by
+# .github/workflows/linkcheck.yaml. It checks the site built by `zensical build`
+# (so anchors resolve exactly as readers see them) plus the Markdown that is not
+# part of the site: README.md and the cookiecutter template. See README.md for
+# how to run it locally.
+
+no_progress = true
+
+# Cache results between runs (stored in .lycheecache) so repeated runs do not
+# hammer the same servers. Server errors are never cached.
+cache = true
+max_cache_age = "1d"
+cache_exclude_status = "500.."
+
+# Retry flaky links before declaring them dead. 429 means "rate limited", not
+# "gone", so it counts as alive.
+max_retries = 3
+retry_wait_time = 2
+timeout = 30
+accept = ["200..=299", "429"]
+
+# Some publishers return 403 to non-browser clients, so present as a browser.
+user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0"
+header = { "accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "accept-language" = "en-US,en;q=0.5" }
+
+# Check `#anchor` links against the ids in the target page, and resolve links to
+# directories (e.g. `../starting/#the-fish-model`) to their index.html.
+include_fragments = "anchor-only"
+index_files = ["index.html"]
+
+exclude = [
+    # Bot protection on these publisher sites answers 403 to automated requests
+    # (including GitHub runners) even with browser headers, although the pages
+    # load fine in a browser. Last checked by hand: 2026-10-28.
+    '^https://www\.sciencedirect\.com/',
+    '^https://www\.tandfonline\.com/',
+    '^https://thereader\.mitpress\.mit\.edu/',
+    # Facebook answers automated requests with 400 or a login wall regardless of
+    # whether the page exists, so the result says nothing about the link.
+    '^https://(www\.)?facebook\.com/',
+]
+
+exclude_path = [
+    # Zensical's 404 page links to a `#__skip` target that only exists on real pages.
+    '(^|/)site/404\.html$',
+    # Only lists the site's own pages, which are checked directly.
+    '(^|/)site/sitemap\.xml$',
+]
